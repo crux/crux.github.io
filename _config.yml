@@ -6,7 +6,7 @@
 name: dirk lüsebrink
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: being here for a while, still interested in everythings
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 #avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -19,7 +19,7 @@ avatar: https://avatars0.githubusercontent.com/u/5321?v=3&s=140
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: dirk@sebrink.de
   facebook:
   flickr:
   github: crux/crux.github.io
