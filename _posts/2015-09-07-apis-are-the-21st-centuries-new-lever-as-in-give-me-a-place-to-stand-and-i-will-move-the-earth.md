@@ -28,6 +28,7 @@ author:
   first_name: ''
   last_name: ''
 ---
-<p>[caption id="attachment_172" align="alignright" width="300"]<a href="https://sofasportler.files.wordpress.com/2015/09/archsteun.jpg"><img class="wp-image-172 size-medium" title="Archimedes" src="{{ site.baseurl }}/assets/archsteun.jpg?w=300" alt="" width="300" height="191" /></a> Archimedes[/caption]</p>
-<p>oops, i just wanted to save title and image as draft, but as i'm still tinkering with setting up this new blogging environment it got published accidentally and somehow made it to twitter where it got favorited. Fast paced social media world. Anyhow, to not let the tweet link into the nowhere I updated this yet non-written post to be public.</p>
+<img src="{{ site.baseurl }}/assets/archsteun.jpg" alt="Archimedes" style="float:right;" align="left" border="10"/>
+
+oops, i just wanted to save title and image as draft, but as i'm still tinkering with setting up this new blogging environment it got published accidentally and somehow made it to twitter where it got favorited. Fast paced social media world. Anyhow, to not let the tweet link into the nowhere I updated this yet non-written post to be public.</p>
 <p>Once I put my insights organized I'll update this.</p>
