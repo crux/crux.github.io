@@ -1,0 +1,32 @@
+---
+layout: post
+title: interpolate hex color vectors in one line of ruby
+date: 2007-06-27 08:30:53.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- coding
+- fun
+- ruby
+tags: []
+meta:
+  _publicize_job_id: '14401150840'
+  original_post_id: '123'
+  _wp_old_slug: '123'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<p>which color lies halfway inbetween <span style="font-weight:bold;color:rgb(255,0,255);">#ff00ff</span> and <span style="font-weight:bold;color:rgb(0,255,0);">#00ff00</span> you ask?</p>
+<p>One line of ruby code can interolate two color vectors like they are usually found inside css files, like: <code>body{background: #ff00ff; color: #00ff00}</code>.
+<pre><code class="ruby">%w{</code><code class="ruby"></code><code class="ruby">ff00ff 00ff00</code><code class="ruby"></code><code class="ruby">}.map{|a|a.scan(/../).map{|b|b.hex}}.inject{|c,d|(0...c.size).each{|i|c[i]+=d[i]};c}.map{|e|"%02x"%(e&gt;&gt;1)}.join</code></pre>
+<p><span style="font-weight:bold;">@UPDATE:</span> 
+<pre><code class="ruby">#</code>121 character solution by <a href="http://www.nach-vorne.de/">schmidt(http://www.nach-vorne.de)</a><br /><code class="ruby">%w{ff00ff 00ff00}.map{|a|a.scan(/../).map{|b|b.hex}}.inject{|c,d|c.size.times{|i|c[i]+=d[i]};c}.map{|e|"%0x"%(e&gt;&gt;1)}.join</code></pre>
+<p>Answer -&gt; <span style="font-weight:bold;color:rgb(127,127,127);">0x7f7f7f</span><code></code>. sure, there must be a shorter version. Can you show it to me?</p>
+<p>next step: color animations and gradients and HSR colorspace conversions mayby. </p>
+<p>have fun</p>
+<p>Technorati Tags: <a class="performancingtags" href="http://technorati.com/tag/ruby" rel="tag">ruby</a>, <a class="performancingtags" href="http://technorati.com/tag/coding" rel="tag">coding</a>, <a class="performancingtags" href="http://technorati.com/tag/puzzle" rel="tag">puzzle</a>, <a class="performancingtags" href="http://technorati.com/tag/css" rel="tag">css</a>, <a class="performancingtags" href="http://technorati.com/tag/hex" rel="tag">hex</a>, <a class="performancingtags" href="http://technorati.com/tag/color" rel="tag">color</a>, <a class="performancingtags" href="http://technorati.com/tag/interpolation" rel="tag">interpolation</a></p>

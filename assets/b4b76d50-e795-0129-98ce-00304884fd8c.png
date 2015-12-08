@@ -1,0 +1,623 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" ><![endif]-->
+	<!--[if lt IE 9]>
+        <html class="no-js lt-ie9" lang="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<![endif]-->
+	<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+	<head>
+<title>FirstSpirit, OpenText Web Site Management, Magento, Internetagentur | I-D Media AG</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="keywords" content="sitecore, firstspirit, aem, opentext, wsm, web site management, magento " />
+<meta name="id" content="5710" />
+<meta name="language" content="de" />
+<meta name="description" content="Internetagentur und Partner für FirstSpirit, OpenText WSM, Sitecore, AEM, RedDot und Magento. Wir entwickeln führende E-Business Lösungen seit 1988." />
+<meta name="title" content="FirstSpirit, OpenText Web Site Management, Magento, Internetagentur" />
+<meta name="category" content="Startseite" />
+<meta name="referenceproject" content="false" />
+<meta name="contactperson" content="Dr. Patrick Sandmann" />
+<meta name="client" content="" />
+<meta name="services" content="" />
+<meta name="tags" content="" />
+<link rel="stylesheet" href="css/css_head.css"/>
+<noscript>
+	<link rel="stylesheet" href="css/no-js.css"/>
+</noscript>
+<!--[if lt IE 9]>		
+<link rel="stylesheet" href="css/ie8.css"/>
+<![endif]-->
+<link rel="stylesheet" href="css/print.css" media="print"/>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<script src="js/modernizr.js"></script>
+<!--[if lt IE 9]>
+<script src="js/jquery-1.10.2.min.js"></script>
+<![endif]-->
+<!--[if (gte IE 9) | (!IE)]><!-->
+<script src="js/jquery-2.0.3.js"></script> 
+<!--<![endif]--></head>
+	<body  id="home">
+	<div id="nav">
+	<div class="row" id="top-navi">
+		<div class="medium-2 large-3 columns col1">
+			<div class="logo show-for-medium-up">
+				<a href="/">
+					<img src="/images/admin/logo.png" alt="I-D Media Logo"/>
+				</a>
+			</div>
+		</div>
+		<div class="medium-10 large-9 columns col2">	
+			<nav class="top-bar" data-topbar>  
+				<ul class="title-area">
+					<li class="name show-for-small-only"><a href="/"><img src="/images/admin/logo.png" alt="I-D Media Logo"/></a></li>
+					<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+				</ul>
+				<section class="top-bar-section">				
+					<!-- Top Nav Section -->	
+					<ul class="left">				
+<li > <a href="/">Home</a> </li> <li class="has-dropdown "> <a class="invisible-on-small" href="/leistungen/">Leistungen</a> <a href="/leistungen/" class="dropdown-link-follow visible-on-small">Leistungen</a> <a href="#" class="dropdown-link visible-on-small"></a> <ul class="dropdown"> <li class="has-dropdown "> <a class="invisible-on-small" href="/leistungen/firstspirit/">FirstSpirit</a> <a href="/leistungen/firstspirit/" class="dropdown-link-follow visible-on-small">FirstSpirit</a> <a href="#" class="dropdown-link visible-on-small"></a> <ul class="dropdown"> <li > <a href="/leistungen/firstspirit/update/">FirstSpirit 5.2 Update</a> </li> <li > <a href="/leistungen/firstspirit/translationstudio/">TranslationStudio</a> </li> </ul> </li> <li class="has-dropdown "> <a class="invisible-on-small" href="/leistungen/opentext/">OpenText</a> <a href="/leistungen/opentext/" class="dropdown-link-follow visible-on-small">OpenText</a> <a href="#" class="dropdown-link visible-on-small"></a> <ul class="dropdown"> <li > <a href="/leistungen/opentext/wsm112/">WSM 11.2</a> </li> </ul> </li> <li > <a href="/leistungen/sitecore/">Sitecore</a> </li> <li > <a href="/leistungen/adobe-aem/">Adobe AEM</a> </li> <li > <a href="/leistungen/opensource/">OpenSource CMS</a> </li> <li > <a href="/leistungen/magento/">Magento</a> </li> <li > <a href="/leistungen/design/">Design</a> </li> <li > <a href="/leistungen/mobile/">Mobile</a> </li> <li > <a href="/leistungen/services/">Services</a> </li> </ul> </li> <li > <a href="/projekte/projekte.html">Projekte</a> </li> <li > <a href="/kunden/kunden.html">Kunden</a> </li> <li class="has-dropdown "> <a class="invisible-on-small" href="/unternehmen/">Unternehmen</a> <a href="/unternehmen/" class="dropdown-link-follow visible-on-small">Unternehmen</a> <a href="#" class="dropdown-link visible-on-small"></a> <ul class="dropdown"> <li > <a href="/unternehmen/aktuelles/">Aktuelles</a> </li> <li > <a href="/unternehmen/idmediagroup/">I-D Media Group</a> </li> <li > <a href="/unternehmen/historie/">Historie</a> </li> <li > <a href="/unternehmen/team/">Team</a> </li> <li > <a href="/unternehmen/karriere/">Karriere</a> </li> <li > <a href="/unternehmen/soziales/">Soziales</a> </li> </ul> </li> <li > <a href="/kontakt/index.php" rel="nofollow">Kontakt</a> </li>
+						<!--
+						<li class="searchform">
+							<form action="/special-pages/suche/" name="topsearch" id="topsearch">
+								<input type="search" placeholder="Suche" class="search">
+								<a class="search is-js" href="javascript:document.topsearch.submit();" onclick="javascript:document.topsearch.submit();"><span class="icon-search-1"></span>
+								<input type="submit" class="no-js " value="&gt;&gt;"></a>
+							</form>
+						</li>
+						<li class="searchformedium">
+							<a class="search" href="javascript:;"><span class="icon-search-1"></span></a>
+						</li>
+						-->
+					</ul>
+				</section>
+			</nav>		
+		</div>
+	</div>
+</div>
+		<!-- content -->
+			<!-- index --><div id="da-slider" class="da-slider row" data-plugin="slider" data-length="3" data-autoplay="true" data-interval="8000" >
+   	<div  class="da-slide default" data-slider-image="/images/projekte/craft_beer_banner_1600x600.jpg" data-slider-image-small="/images/projekte/craft_beer_banner_1600x600_667w.jpg" data-slider-image-medium="/images/projekte/craft_beer_banner_1600x600_1024w.jpg">
+	<noscript><img src="/images/projekte/craft_beer_banner_1600x600.jpg" alt="Turck Relaunch" title="Turck Relaunch"></noscript>
+	<a href="/projekte/krones-craftbrewer/">
+		<h2>Craft Beer Microsite</h2><br/>
+		<p>Kampagne der Krones AG über die Welt des Craft Brewing</p>
+	</a>
+</div><div  class="da-slide responsive-design" data-slider-image="/images/slider/responsiv_hero.jpg" data-slider-image-small="/images/slider/responsiv_hero_667w.jpg" data-slider-image-medium="/images/slider/responsiv_hero_1024w.jpg">
+	<noscript><img src="/images/slider/responsiv_hero.jpg" alt="Responsives Webdesign" title="Responsives Webdesign"></noscript>
+	<a href="/leistungen/responsivedesign/">
+		<h2>Responsives Webdesign</h2><br/>
+		<p>Unser Webdesign erreicht Besucher und Zielgruppen auf allen Endgeräten und Plattformen</p>
+	</a>
+</div><div  class="da-slide default" data-slider-image="/images/slider/location-based-services.jpg" data-slider-image-small="/images/slider/location-based-services_667w.jpg" data-slider-image-medium="/images/slider/location-based-services_1024w.jpg">
+	<noscript><img src="/images/slider/location-based-services.jpg" alt="museumsführungssystem" title="museumsführungssystem"></noscript>
+	<a href="/leistungen/location-based-services/">
+		<h2>Location based Services</h2><br/>
+		<p>Intelligente mobile Lösungen und audiovisuelle Führungssysteme</p>
+	</a>
+</div>     
+    <nav  class="da-arrows">
+        <span style="color:#d5331c" class="da-arrows-prev icon-left-circled"></span>
+        <span style="color:#d5331c" class="da-arrows-next icon-right-circled"></span>
+    </nav>
+</div>
+<!-- 3er Teaser -->
+<div  id="threeteaser" class="row col-only-one" data-equalizer>
+			 <div class="medium-4 large-4 columns">
+	<div class="teaser" data-equalizer-watch>
+		<h4 class="white">Erfahren Sie mehr über unser FirstSpirit CMS Modul TranslationStudio</h4>
+	</div><a href="/leistungen/firstspirit/translationstudio/" class="button">
+		<span class="show-for-large-up">FirstSpirit TranslationStudio</span>
+		<span class="show-for-medium-only">Mehr erfahren</span>				
+		<span class="show-for-small-only">Mehr erfahren</span>
+	</a>
+</div>
+			 <div class="medium-4 large-4 columns">
+	<div class="teaser" data-equalizer-watch>
+		<h4 class="white">Wir sind Preferred Partner und Technologie Partner für das FirstSpirit CMS</h4>
+	</div><a href="/leistungen/firstspirit/" class="button">
+		<span class="show-for-large-up">FirstSpirit CMS</span>
+		<span class="show-for-medium-only">Mehr erfahren</span>				
+		<span class="show-for-small-only">Mehr erfahren</span>
+	</a>
+</div>
+			 <div class="medium-4 large-4 columns">
+	<div class="teaser" data-equalizer-watch>
+		<h4 class="white">Seit über 15 Jahren Ihr verlässlicher Premier Partner für OpenText WSM (ehemals RedDot)</h4>
+	</div><a href="/leistungen/opentext/" class="button">
+		<span class="show-for-large-up">OpenText WSM (RedDot)</span>
+		<span class="show-for-medium-only">Mehr erfahren</span>				
+		<span class="show-for-small-only">Mehr erfahren</span>
+	</a>
+</div>
+</div>
+<!-- /3er Teaser --><!-- /index -->
+<!-- index --><div  class="row pattern noMarginTop img-text" id="img-text_7094">
+	<div class="medium-7 large-8 columns col1">
+<!-- index -->
+<div class="teaser anim" id="teaser_2"><h1>Internetagentur für FirstSpirit, OpenText Web Site Management, Magento und vieles mehr</h1><p>Die I-D Media AG ist eine unabhängige, inhabergeführte Internetagentur in Köln. Wir sind Spezialisten für Enterprise Content Management Systeme wie       <a  href="/leistungen/opentext/" alt="link opentext wsm" >OpenText Web Site Management</a> (ehemals RedDot), <a  href="/leistungen/firstspirit/" alt="link firstspirit" >FirstSpirit</a> und <a  href="/leistungen/sitecore/" alt="link sitecore" >Sitecore</a>. Für den Aufbau von Webshops nutzen wir <a  href="/leistungen/ecommerce/" alt="Link zu eCommerce" target="_self">eCommerce</a> Systeme wie <a  href="/leistungen/magento/" alt="link magento" >Magento</a>. Seit 1988 betreut I-D Media namhafte, internationale <a  href="/kunden/kunden.html" >Kunden</a>. Zusammen mit starken  Partnern agieren  wir in der <a  href="/unternehmen/idmediagroup/" alt="Link zur I-D Media Group" target="_self">I-D Media Group</a> als Fullservice Agentur.</p>
+</div>
+<!-- /index -->
+	</div>	
+	<div class="medium-5 large-4 columns col2 text-center"><!-- nocontent -->
+	<div  class="teaser-contact person right  anim" id="contact_46">
+		<div class="top">
+			<h3>Dr. Patrick Sandmann</h3>
+			<p class="bgwhite">Vorstand der I-D Media AG</p>
+		</div>
+			<img  title="Dr. Patrick Sandmann" alt="Dr. Patrick Sandmann"  id="imgperson_46" data-interchange="[/images/mitarbeiter/Sandmann-Potrait-frei_175w.png, (default)], [/images/mitarbeiter/Sandmann-Potrait-frei_120w.png, (small)], [/images/mitarbeiter/Sandmann-Potrait-frei_150w.png, (medium)],[/images/mitarbeiter/Sandmann-Potrait-frei_175w.png, (large)]" src="/images/mitarbeiter/Sandmann-Potrait-frei_175w.png"/>
+		<div class="bottom">
+			<p>Kontaktieren Sie uns!<br />Tel.: +49 221 399 603-0</p>
+			<a href="/kontakt/index.php?ci=1217" class="button small" rel="nofollow">E-Mail</a>
+		</div>
+    </div>
+	   <!-- /nocontent -->
+					<!-- Include-Bild col2 -->
+					<div class="text-center">			
+					  </div>  
+					  <!-- /Include-Bild col2 -->
+				<div class="hangover-divider solr-mehr-link hide">
+				<a class="button" href="/">
+					<span class="show-for-large-up">Mehr Infos zu FirstSpirit, OpenText Web Site Management, Magento, Internetagentur</span>
+					<span class="show-for-medium-only">Mehr Infos</span>
+					<span class="show-for-small-only">Mehr Infos</span>
+				</a>					
+		   </div>
+	</div>			
+</div>
+<!-- /index --><!-- index -->
+<script>
+var anime7094 = function(){	
+	Animation.allType($('#teaser_2.anim'),1000,'animated fadeInLeft');Animation.allType($('#contact_46.anim'),1000,'doubleAnimation');
+};
+$(function(){		
+	coolAnimation('#img-text_7094',anime7094);
+	if($('#img-text_7094').parent().hasClass("included")){
+		Animation.allType($('#teaser_2.anim'),1000,'animated fadeInLeft');Animation.allType($('#contact_46.anim'),1000,'doubleAnimation');
+	}
+})
+</script><!-- /index -->
+<!-- index -->
+<div class="row">
+	<div  class="large-full columns col-only-one pattern-timeline">
+	    <h2 class="text-center clearfix"><span class="button sqare-red">News und Pressemitteilungen</span></h2>
+		<section id="cd-timeline" class="cd-container">
+			<div id="cd-scroller" class="icon-menu-1"></div>
+			<div class="cd-timeline-block-container">
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>29.09.2015 Andreas Pilz neuer Vorstand der OpenText Usergroup</h2><p>I-D Media gratuliert ihrem Senior Projektleiter und Prokuristen Andreas Pilz zur Berufung in den Vorstand der Open Text Web Solutions Usergroup e.V. (OWUG).</p>
+		<a href="/unternehmen/aktuelles/andreas-pilz-vorstand-opentext-usergroup/" class="button">
+			<span class="show-for-medium-up">Zur Pressemitteilung</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>03.08.2015 Barrierefreier Auftritt für die NBank</h2><p>Auf der Basis von FirstSpirit präsentiert sich die Investitions- und Förderbank des Landes Niedersachsen zum Juli 2015 mit einem gänzlich neu gestalteten Internetauftritt. I-D Media übernahm dabei sowohl die Konzeption als auch Ergänzungen im Design und stellt der NBank darüber hinaus eine performante Server-Infrastruktur zur Verfügung.</p>
+		<a href="/projekte/nbank/" class="button">
+			<span class="show-for-medium-up">Zur NBank Referenz</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>30.06.2015 Craft Brewer Microsite für Krones</h2><p>Die Kampagnenseite für Craft Beer zeigt, wie der Craft Brewer mit der Produktpalette von Krones durch das Maischen, Läutern und Würzekochen, der richtigen Gärung und Lagerung sowie der Filterung feinstes Bier zaubern kann.</p>
+		<a href="/projekte/krones-craftbrewer/" class="button">
+			<span class="show-for-medium-up">Zur Craft Brewer Kampagne</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>12.06.2015 Wir suchen Java- und Webentwickler</h2><p>Aufgepasst und weitersagen: Wir suchen Software- und Webentwickler zur Festanstellung, insbesondere für unsere FirstSpirit CMS Projekte.</p>
+		<a href="/unternehmen/karriere/" class="button">
+			<span class="show-for-medium-up">Zu unseren Jobangeboten</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>24.03.2015 OpenText Innovation Tour 2015</h2><p>Auch in diesem Jahr lädt OpenText alle Kunden im Rahmen der Innovation Tour am 24. und 25. März 2015 zum Dialog mit OpenText und Partnern nach München ein. Treffen Sie die I-D Media AG auf dem Roundtable der OpenText Web Solutions Usergroup (OWUG).<a  href="http://www.opentext.de/campaigns/innovation-tour-emea/munich/register-now" target="_blank" class="button" id="button_233745">
+	<span class="show-for-medium-up">Zur Anmeldung</span>
+	<span class="show-for-small-only">Mehr erfahren</span>
+</a>
+</p>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>06.02.2015 Auszeichnung für unsere Azubis der Fachinformatik</h2><p>Unsere beiden Auszubildenden Florian Jüsten und Florian Walter haben im Januar 2015 ihre Ausbildung zum Fachinformatiker mit Bravour bestanden und gehören mit ihren Abschlüssen zu den drei besten Fachinformatikern ihrer Schule der IHK Köln.</p>
+		<a href="/unternehmen/karriere/" class="button">
+			<span class="show-for-medium-up">Mehr über den IHK Ausbildungsbetrieb I-D Media AG</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>22.12.2014 TranslationStudio für FirstSpirit</h2><p>Auf dem e-Spirit Kundentag hat die I-D Media AG zusammen mit ihrem Kunden WAGO Kontakttechnik GmbH &amp; Co. KG das FirstSpirit CMS TranslationStudio präsentiert.</p>
+		<a href="/leistungen/firstspirit/translationstudio/" class="button">
+			<span class="show-for-medium-up">Zum FirstSpirit TranslationStudio</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>20.10.2014 Treffen Sie uns auf dem e-Spirit Kundentag</h2><p>Am 13./14.11.2014 findet der e-Spirit Kundentag in Frankfurt statt! Die I-D Media AG ist dieses Jahr als Gold Sponsor dabei.</p>
+		<a href="/leistungen/firstspirit/translationstudio/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>14.10.2014 Der neue Gartner Magic Quadrant für WCM ist da</h2><p>&#34;IT-Führungskräfte, die für Web Content Management verantwortlich sind, sollten die Kernfunktionen des Produktes genau betrachten, um das optimale Produkt für ihre Online-Strategie zu identifizieren.&#34;</p>
+		<a href="/unternehmen/aktuelles/Der-neue-Gartner-Magic-Quadrant-für-WCM/" class="button">
+			<span class="show-for-medium-up">Zum Gartner WCM Magic Quadrant</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>01.10.2014 Bericht über den FirstSpirit CMS Partnertag 2014</h2><p>Dem Motto des Partnertags &#34;Miteinander!&#34; entsprechend wurde über zwei Tage gemeinsam diskutiert und aufmerksman unter den ca. 150 geladenen Gästen zugehört.</p>
+		<a href="/unternehmen/aktuelles/Bericht-über-den-FirstSpirit-CMS-Partnertag-2014/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>27.08.2014 Treffen Sie I-D Media auf der dmexco 2014</h2><p>Vereinbaren Sie noch heute einen Termin mit uns. Wir freuen uns Sie in der Medienstadt Köln zu begrüßen.</p>
+		<a href="/unternehmen/aktuelles/Treffen-Sie-I-D-Media-auf-der-dmexco-2014/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>07.07.2014 I-D Media ist neuer Adobe Experience Manager Partner</h2><p>Die Kölner Web-Experten haben ihre Angebotspalette mit Adobe Experience Manager um das laut Gartner und Forrester innovativste Content Management System erweitert.</p>
+		<a href="/unternehmen/aktuelles/I-D-Media-ist-neuer-Adobe-Experience-Manager-Partner/" class="button">
+			<span class="show-for-medium-up">Mehr Info</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>26.06.2014 I-D Media beim Sitecore Symposium in Barcelona</h2><p>Sitecore lädt ins sonnige Barcelona zu ihrer wichtigsten Veranstaltung ein. Und wir als Partner sind vom 15. - 17. September selbstverständlich dabei.</p>
+		<a href="/unternehmen/aktuelles/Eindrücke-vom-Sitecore-Symposium-2014/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>12.05.2014 Jakub Santur hält Vortrag auf der 35. Anwendertagung der OWUG</h2><p>Unser Vertriebsleiter und Vorstandsmitglied der Open Text Websolutions Usergroup Jakub Santur hält einen Vortrag zum Thema &#34;Die Chancen des digitalen Marketings&#34;.</p>
+		<a href="/unternehmen/aktuelles/Jakub-Santur-hält-Vortrag-auf-der-35.-Anwendertagung-der-OWUG/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>28.04.2014 Ausbildungsplätze bei der I-D Media AG</h2><p>Bewerben Sie sich zum 1. August 2014 um einen Ausbildungsplatz als Fachinformatiker/-in mit dem Schwerpunkt Anwendungsentwicklung.</p>
+		<a href="/unternehmen/aktuelles/Ausbildungsplätze-bei-der-I-D-Media-AG/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>05.04.2014 Turck Relaunch mit I-D Media</h2><p>Alles neu: Die Adresse www.turck.de führt seit April 2014 zu einem neuen Internetauftritt, der technisch und optisch wieder voll auf der Höhe der Zeit ist.</p>
+		<a href="/unternehmen/aktuelles/Turck-Relaunch-mit-I-D-Media/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>17.02.2014 Rückbenennung in I-D Media AG</h2><p>Die Hauptversammlung der new i-d media AG hat einstimmig die Rückbenennung in I-D Media AG beschlossen.</p>
+		<a href="/unternehmen/aktuelles/Rückbennenung-in-I-D-Media-AG/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>11.02.2014 Rückblick auf die 34. OWUG Anwendertagung</h2><p>Die erste Anwendertagung der OpenText Web Solutions Usergroup e.V. (OWUG) des Jahres 2014 fand am 28. Januar im Mercure Hotel Mannheim am Rathaus statt.</p>
+		<a href="/unternehmen/aktuelles/Rückblick-auf-die-34.-OWUG-Anwendertagung/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>24.01.2014 I-D Media launcht Krones Unternehmensgeschichte</h2><p>Die Krones AG zeigt mit einer neuen Microsite eindrucksvoll die Entwicklung des Unternehmens.</p>
+		<a href="/unternehmen/aktuelles/I-D-Media-launcht-Krones-Unternehmensgeschichte/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>22.01.2014 Besuchen Sie I-D Media auf den OpenText Innovation Days 2014</h2><p>Am 18. bis 19. März lädt OpenText wieder zum Dialog mit Kunden und Partnern nach München ein. Aktuelle Informationen, bspw. zum Enterprise CMS OpenText Web Site Management (WSM), Erfahrungsaustausch und Networking bestimmen auch 2014 das Programm der beiden Tage der Veranstaltung, die früher als OpenText Content Days bekannt war.</p>
+		<a href="/unternehmen/aktuelles/Besuchen-Sie-I-D-Media-auf-den-OpenText-Innovation-Days-2014/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>10.01.2014 Snap by Sky Umsetzung von I-D Media</h2><p>Anfang Dezember 2013 startete Sky den neuen Streaming Dienst Snap und baut damit sein On-Demand Angebot weiter aus.</p>
+		<a href="/unternehmen/aktuelles/Snap-by-Sky-Umsetzung-von-I-D-Media/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>16.12.2013 I-D Media entwickelt Sky-Geschäftskundenportal</h2><p>Mit dem neuen Portal business.sky.de bietet Sky seinen Geschäftskunden umfassende Information über die Business-Angebote von Sky sowie eine eigene Plattform zur Präsentation ihrer Sky Sportsbar oder ihres Sky Hotels.</p>
+		<a href="/unternehmen/aktuelles/I-D-Media-entwickelt-Sky-Geschäftskundenportal/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>24.09.2013 Jakub Santur im Vorstand der OWUG</h2><p>I-D Media gratuliert ihrem Vertriebsleiter Jakub Santur zur Berufung in den Vorstand der Open Text Web Solutions Usergroup e.V. (OWUG).</p>
+		<a href="/unternehmen/aktuelles/Jakub-Santur-im-Vorstand-der-OWUG/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>29.08.2013 I-D Media ist neuer Sitecore Solution Partner</h2><p>Bremen, Köln, 29.08.2013 – I-D Media, der bundesweit bekannte IT-Spezialist für Content Management Systeme, ist neuer Sitecore Solution Partner.</p>
+		<a href="/unternehmen/aktuelles/I-D-Media-ist-neuer-Sitecore-Solution-Partner/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>03.07.2013 ecomac.com Relaunch 2013</h2><p>Die Website von ecomac besticht nach dem Relaunch von I-D Media durch eine übersichtliche Optik und neue Funktionen.</p>
+		<a href="/unternehmen/aktuelles/ecomac.com-Relaunch-2013-von-I-D-Media/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>17.06.2013 Krones schafft „Mehr Wert“ zur drinktec 2013</h2><p>Die neue von I-D Media entwickelte Microsite der Krones AG zur Weltleitmesse für die Getränke- und Liquid-Food-Industrie drinktec ist modular aufgebaut und passt sich jederzeit der Auflösung und dem Device an, mit der sie aufgerufen wird.</p>
+		<a href="/unternehmen/aktuelles/Krones-Messeseite-zur-drinktec-2013-von-I-D-Media/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>03.06.2013 Badespaß in Bielefeld mit zwei Magento Online-Shops</h2><p>Dank neuer Magento Online-Shops von I-D Media können Eintrittskarten und Gutscheine für die Bäder in Bielefeld ab sofort bequem von zu Hause online erworben werden.</p>
+		<a href="/projekte/ishara/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+<!-- cd-timeline-block start -->
+<div  class="cd-timeline-block">
+	<div class="cd-timeline-img red"></div>
+	<div class="cd-timeline-content">
+		<h2>02.04.2013 I-D Media baut Social Media Kompetenz aus</h2><p><a  href="/unternehmen/team/sebastian-stolte/" alt="link zu sebastian stolte" >Sebastian Stolte</a> unterstützt unser Team ab sofort als Projektmanager.</p>
+		<a href="/unternehmen/aktuelles/I-D-Media-baut-Social-Media-Kompetenz-aus/" class="button">
+			<span class="show-for-medium-up">Mehr erfahren</span>
+			<span class="show-for-small-only">Mehr erfahren</span>
+		</a>
+	</div>
+</div>
+<!-- cd-timeline-block end-->
+			</div>
+		</section>
+	</div>
+</div>
+<script>
+		var bTimelineIsExpanded = false;
+</script>
+<!-- /index -->
+		<!-- /content -->
+		<div id="page-content-ext" class="included">
+<script>
+var includesInfo = { 
+	"id"			: "5710de",
+	"title"			: "FirstSpirit, OpenText Web Site Management, Magento, Internetagentur",
+	"category"		: "Startseite",
+	"contactperson"	: "Dr. Patrick Sandmann",
+	"client"   		: "",
+	"services"  	: [],
+	"keywords"   	: []
+};
+</script>
+		</div>	
+		<footer>
+			<div class="row">
+	<div class="small-12 medium-3 large-5 columns">
+		<h4>Wir sind Partner von:</h4>
+		<div class="clearfix"></div>				
+		<div class="imgteaser left">
+			<a href="/leistungen/opentext/">
+				<img src="images/admin/opentext-logo.png" alt="OpenText Partner" title="OpenText Partner"/>
+				<span>OpenText Premium Partner</span>
+			</a>
+		</div>
+		<div class="imgteaser left">
+			<a href="/leistungen/sitecore/">
+				<img src="images/admin/sitecore-logo.jpg" alt="Sitecore Partner" title="Sitecore Partner"/>
+				<span>Sitecore Partner</span>
+			</a>
+		</div>
+		<div class="imgteaser left">
+			<a href="/leistungen/firstspirit/">
+				<img src="images/logos/e-spirit_300_221.png" alt="FirstSpirit CMS Partner" title="FirstSpirit CMS Partner"/>
+				<span>FirstSpirit Preferred und Technologie Partner</span>
+			</a>
+		</div>
+		<div class="imgteaser left">
+			<a href="/leistungen/adobe-aem/">
+				<img src="images/logos/adobe-experience-manager.png" alt="Adobe Experience Manager (AEM) Partner" title="Adobe Experience Manager (AEM) Partner"/>
+				<span>Adobe Partner</span>
+			</a>
+		</div>		
+	</div>
+	<div class="small-12 medium-4 large-4 columns vcard">
+		<h4>Kontaktinformationen:</h4>
+		<p><span class="org">I-D Media AG</span><br/>
+			<span class="street-address">Konrad Adenauer Ufer 39</span><br/>
+			<span class="locality">D - 50668 Köln</span>
+		</p>
+		<p>fon: <a href="tel:+492213996030" class="txtdark tel">+49 221 399 603 0</a><br/>
+			fax: +49 221 399 603 19<br/>
+		</p>
+		<a href="mailto:contact@idmedia.com" class="button small">E-Mail</a>
+	</div>	
+	<div class="small-12 medium-5 large-3 columns">
+		<h4>Besuchen Sie uns auch auf:</h4>
+		<ul class="socials">
+			<li><a class="icon-xing-squared" href="https://www.xing.com/companies/i-dmediaag" target="_blank"><span>Xing</span></a></li>
+			<li><a class="icon-facebook-squared" href="https://www.facebook.com/idmediagroup" target="_blank"><span>Facebook</span></a></li>
+			<li><a class="icon-twitter-squared" href="http://twitter.com/weareidmedia" target="_blank"><span>Twitter</span></a></li>
+			<li><a class="icon-gplus-squared" href="https://plus.google.com/110283115556172804022" target="_blank"><span>Google+</span></a></li>
+			<li><a class="icon-linkedin-squared" href="http://www.linkedin.com/company/i-d-media-ag" target="_blank"><span>LinkedIn</span></a></li>
+		</ul>
+	</div>	
+</div>
+<div class="row">
+	<div class="small-12 medium-6 large-6 columns">
+		<p>&copy; 1988-2015 I-D Media AG, <a href="/datenschutz/" rel="nofollow">Datenschutz</a>, <a href="/impressum/" rel="nofollow">Impressum</a></p>
+	</div>
+	<div class="small-12 medium-6 large-6 columns">
+		<img src="images/admin/idmedia_philosophie.png" alt="your digital future today" class="right"/>	
+	</div>	
+</div>		
+		</footer>		
+<script type="text/javascript">
+	window.deviceType = 'computer';
+	window.isMobile = false;
+	window.isAndroid = false;
+	window.isTablet = false;
+	window.isIpad =	false;
+	window.isSamsung = false;
+</script> 
+<!--[if lt IE 9]>
+<script src="js/ie8/rem.js.js"></script>
+<![endif]-->
+<script src="js/js_bottom.js"></script>
+<script>
+	$(document).foundation();
+</script>	
+		<!-- Published: 27.11.2015 10:19:48 by Patrick Sandmann -->
+	</body>
+
+</html>

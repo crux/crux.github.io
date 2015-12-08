@@ -1,0 +1,37 @@
+---
+layout: post
+title: ok, ok, not all things work, but we have DNS now at least!
+date: 2015-09-04 20:09:07.000000000 +02:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  _wpcom_is_markdown: '1'
+  _rest_api_published: '1'
+  _rest_api_client_id: "-1"
+  _publicize_job_id: '14439312211'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<p>and thats not bad! as you might have seen I revived my old blog from its 2008 SQL database dump. Today I tried moving it back to its old domain. In short, so far the steps where reloading old sql backup to mysql in docker, wordpress in docker upgrading database, exporting from wordpress as XML, importing XML to blog instance on http://sofasportler.wordpress.com/. Now I want to be reachable under it's old domain htttp://sofasportler.de/.</p>
+<p>The "normal" way with Wordpress.com seems to be ordering the domain with them. But also when you already own the domain they have an option, its call "map" your domain. Sounds good, so i went that way (13euro per blog per year). Problem is, in the next step they ask you to change your nameserver to the ones from wordpress.com, which i didn't want because i use AWS route53 for DNS.</p>
+<p>So heres what i did. First i asked (and payed) to map my sofasportler.de domain to sofasportler.wordpress.com, but did NOT continue to change the sofasportler.de nameserver over to wordpress.</p>
+<p>Than i moved over to Amazon Route53 to add an A record to make sofasportler.de resolve to the sofasportler.wordpress.com IP. Now http://sofasportler.de/ is working, but what is with www.sofasportler.de? The missing link is to have someplace where to redirect www.sofasportler.de to sofasportler.de. This place is AWS S3, the have the redirect feature to host static websites directly from S3.  To do so, you need to have an AWS S3 bucket, what i created for www.sofasportler.de. Once you have it, you can find out its endpoint, in my case something like www.sofasportler.de.s3-website.eu-central-1.amazonaws.com. This endpoint is what you add as target in the AWS route53 entry for www.sofasportler.de. Still with me? Last step is, adding the redirect all traffic to sofasportler.de for the www.sofasportler.de bucket, this is an AWS S3 feature.</p>
+<p>Once all this is in place, it works like this:</p>
+<ol>
+<li>go to http://www.sofasportler.de/</li>
+<li>resolved to S3 bucket,</li>
+<li>bucket gets hit, redirects to sofasporler.de</li>
+<li>sofasportler.de resolves sofasportler.wordpress.com</li>
+<li>wordpress.com sees in coming request for sofasportler.de and happily serves the blog,</li>
+</ol>
+<p>and http://sofasportler.de just starts with step 4 of course.</p>
+<p>still missing, comments and some image links, but i still have to look into this,</p>
+<p>makes sense? I'm not sure, hacked this together in a rush, not sure whether there might be a more reasonable setup. But hey, back from the dead, and that's ok, for now.</p>
+<p>keep pushing,</p>

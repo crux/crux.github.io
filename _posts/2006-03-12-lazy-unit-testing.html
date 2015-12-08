@@ -1,0 +1,25 @@
+---
+layout: post
+title: lazy unit testing
+date: 2006-03-12 15:56:35.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- coding
+- ruby
+tags: []
+meta:
+  _publicize_job_id: '14401145801'
+  original_post_id: '14'
+  _wp_old_slug: '14'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<p><a href="http://redhanded.hobix.com/">inspired</a> by <a href="http://blog.caboo.se/articles/2006/03/03/lazy-migrations-table-drop">lazy-migrations-table-drop</a> i thought this works for collecting unit tests as well. Decide on a pattern for unit test files(t_*.rb for me) and put this code in something like AllTest.rb and it will execute all units test in the current directory.<br />&nbsp;&nbsp;  <br />require 'test/unit'</p>
+<p>glob = ARGV[0] &amp;&amp; "t_*#{ARGV[0]}*.rb" || "t_*.rb"<br />dir = File.dirname __FILE__<br />puts "==&gt; running all unit test in: #{dir}"<br />Dir.glob("#{dir}/#{glob}").each do |file|<br />&nbsp;&nbsp;&nbsp; testname = File.basename(file, ".rb")<br />&nbsp;&nbsp;&nbsp; puts "== next: #{testname}"<br />&nbsp;&nbsp;&nbsp; require testname<br />end</p>
+<p>Technorati Tags: <a href="http://technorati.com/tag/ruby" rel="tag">ruby</a>, <a href="http://technorati.com/tag/coding" rel="tag">coding</a></p>

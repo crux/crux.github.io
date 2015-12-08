@@ -1,0 +1,40 @@
+---
+layout: post
+title: Beef up your RSS2 template for consumption with the Google Feed API Slide Show
+  Control
+date: 2007-05-31 09:39:50.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- coding
+- OpenSource
+- ruby
+tags: []
+meta:
+  _publicize_job_id: '14401150601'
+  original_post_id: '118'
+  _wp_old_slug: '118'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<p>There can be no doubt about it, RSS Feeds became the connecting backplane for the internet. Like <a href="http://pipes.yahoo.com/pipes/">Yahoo Pipes</a> a while ago, the new <a href="http://code.google.com/apis/ajaxfeeds/">Google Feed API</a> is building its functionallity on top off standartized RSS feeds. For the feeds API, just providing a standardized RSS feed is enough to offer you a free ride. And a jolly good ride it is. The <a href="http://googleajaxsearchapi.blogspot.com/2007/05/ajax-feed-api-slide-show-control.html">Slide Show Control</a> is rich in features. Most major photo banks are supported and the actual controls allows for fine grained control of timings and sizes. The funny thing is, the API pretty much covers most of what we discussed at work on the friday before the weekend the API was released.</p>
+<p>For the <a href="http://sorry-but-this-is-not-released-yet">public timeline</a> of our <em>all-online-in-browser-photobooth-application</em> <a href="http://foto-foo.com">foto-foo</a> at <a href="http://prodev.idmedia.com/blog">/i-d media</a> we wanted to add RSS feeds from which to build slide show like applications displaying a constant stream of fresh images. I decided to give it try and found this <a href="http://snippets.dzone.com/posts/show/558">RSS2 rxml template on dzone.com</a> which i filled with my data.</p>
+<p>Various things happend, but no image was to be seen and the browser stalled a couple of times. First thing i found out was, “standard” Feed actually means it uses the <a href="http://search.yahoo.com/mrss">Media RSS extension</a>. This means the feed header has include the Media RSS namespace:
+<pre><code>        xmlns:media="http://search.yahoo.com/mrss/" <br />        xmlns:dc="http://purl.org/dc/elements/1.1/"&gt;</code></pre>
+<p>which in rxml looks like:
+<pre><code>xml.rss "version" =&gt; "2.0", <br />        "xmlns:dc" =&gt; "http://purl.org/dc/elements/1.1/", <br />        "xmlns:media" =&gt; "http://search.yahoo.com/mrss/" do</code></pre>
+<p>Next thing to do is adding a &lt;media:group&gt; to all the feed items:
+<pre><code>      &lt;media:group&gt;<br />        &lt;media:title&gt;"#{img.title}"&lt;/media:title&gt;<br />        &lt;media:content type="#{img.type}" medium="image" url="#{img.url}"/&gt;<br />        &lt;media:credit role="#{img.credit.role"&gt;#{img.credit.txt}&lt;/media:credit&gt;<br />        &lt;media:description type="plain"&gt;"#{img.desc}"&lt;/media:description&gt;<br />        &lt;media:keywords&gt;"#{img.keywords}"&lt;/media:keywords&gt;<br />        &lt;media:thumbnail<br />                width="#{img.thumbnail.width" height="#{img.thumbnail.height"<br />                url="#{img.thumbnail.url}"/&gt;<br />      &lt;/media:group&gt; </code></pre>
+<p>your media group  attributes/elements may vary but there is one nasty surprise lurking which you should be aware of. The Feeds API seems to <em>ignore</em> the actual image URL and chooses the the thumbnail URL instead: no thumbnail, no slideshow! This was kind of driving me mad not beeing able to spot the difference between my none working feed and the working one.<br />
+<h2 id="bonus_feed_reader_compliance">Bonus: feed reader compliance</h2>
+<p>handling images in RSS feeds is part of the vaguely borderline of rich media feeds where things like the <a href="http://search.yahoo.com/mrss">Media RSS extension</a> are actually made for. For Atom it seems media handling is defined a little better but the Feed API depends on RSS2. All this variations are hard to grok for some feedreaders but I wanted to have my <a href="http://foto-foo.com/">foto-foo</a> RSS stream also in my Reader, but the  did just not show up. I checked out <a href="http://web.mac.com/bdunford/iWeb/Riding_with_Robots/Home/Home.html">Riding with robots</a> feed which brings fresh views from outer space directly to my desk. It turns out that they just include a little encode HTML in the decscription tag:
+<pre><code>&lt;description&gt;&amp;lt;a href='#{img.link}'&amp;gt;&amp;lt;img src='#{img.url}'/&amp;gt;&amp;lt;/a&amp;gt;&lt;/description&gt;<br /></code></pre>
+<p>and voila, your <a href="http://googleajaxsearchapi.blogspot.com/2007/05/ajax-feed-api-slide-show-control.html">Slide Show</a> complient rss image feed works equally well in your normal feed reader.</p>
+<p>i know this is all rough and dirty, but it works for me, might help you a bit, and i dont like to drown in spec reading for to long today. Find my <a href="http://snippets.dzone.com/posts/show/4083">RSS2 rxml code snippet on dzone</a> and mess it up in any way you like.</p>
+<p>have fun.</p>
+<p>Technorati Tags: <a class="performancingtags" href="http://technorati.com/tag/rss" rel="tag">rss</a>, <a class="performancingtags" href="http://technorati.com/tag/mrss" rel="tag">mrss</a>, <a class="performancingtags" href="http://technorati.com/tag/ruby" rel="tag">ruby</a>, <a class="performancingtags" href="http://technorati.com/tag/rxml" rel="tag">rxml</a>, <a class="performancingtags" href="http://technorati.com/tag/rails" rel="tag">rails</a>, <a class="performancingtags" href="http://technorati.com/tag/foto-foo" rel="tag">foto-foo</a>, <a class="performancingtags" href="http://technorati.com/tag/google-feed-api" rel="tag">google-feed-api</a></p>

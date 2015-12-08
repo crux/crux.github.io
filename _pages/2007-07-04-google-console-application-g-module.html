@@ -1,0 +1,59 @@
+---
+layout: page
+title: 'g-module: console app for google queries'
+date: 2007-07-04 08:55:33.000000000 +02:00
+type: page
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  _publicize_pending: '1'
+  _wp_page_template: default
+  original_post_id: '128'
+  _wp_old_slug: '128'
+  _oembed_48f037fbbe649c0141412b3386e3f6fd: "{{unknown}}"
+  _oembed_82e206cd7828b373fd08b5d3454550ce: "{{unknown}}"
+  _oembed_9228be58d0c805a4d5d0d6879d0feceb: "{{unknown}}"
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<h2 id="how_to_query_google_with_hpricot_from_your_command_line">How to query google with hpricot from your command line</h2>
+<p>so i found myself the other day sitting there in front of my command line just about to look up something for reference from google. No big deal, google search box is part of every major browser and myriads of other options of OS integrated searches are available as well. But i&#8217;m so old school, the command line is where i spend most of my time, which means using the web browser is a context switch nonetheless. The Mac OS X became so appealing exactly because it is basically Unix with a commandline shell <strong>and</strong> a nice GUI in front of it, and not a GUI <strong>instead</strong> of a shell.</p>
+<p>I put together a little ruby <em>google</em> script to run some of the most basic google queries from the command line, like:</p>
+<pre><code>$ g ruby command line tools &lt;return&gt;
+ -&gt; shows index page with results found for further query</code></pre>
+<p>or a direct jump to the &#8221;I&#8217;m Feeling Lucky&#8221; result:</p>
+<pre><code>$ g :lucky ruby -python google &lt;return&gt;
+ -&gt; directly jump open the browser on the first link found</code></pre>
+<p>I use <code>&#039;:&#039;</code> to <em>modify</em> the default behaviour of the script. Normaly you do this with options but I prefered <code>&#039;:&#039;</code> over <code>&#039;-&#039;</code> and reserve the dash for the query itself. <code>:lucky</code> is just overwriting the default behaviour here. The next modifiers to implement where <code>:count</code> and <code>:fight</code> modifiers like:</p>
+<pre><code>$ g :count your search here
+about 1,330,000,000 results for &lt;your search here&gt; (0.09 seconds) 
+
+$ g :fight &quot;left&quot; &quot;right&quot;
+http://www.googlefight.com</code></pre>
+<p><code>:count</code> is obvious and <code>:fight</code> of course got its inspiration from the awesom <a href="http://www.googlefight.com/">http://www.googlefight.com/</a>.</p>
+<p>I used <a href="http://code.whytheluckystiff.net/hpricot/">Hpricot</a> because i got used to it and it does actually everything i need in an elegant and concise way. The script does <strong>NOT</strong> use the <a href="http://code.google.com/apis/ajaxsearch/signup.html">Google Ajax Search API</a>, but does scrape its results from the <em>normal</em> HTML response page. I simple didn&#8217;t want to make my simple script dependent on signing up for an <a href="http://code.google.com/apis/ajaxsearch/signup.html">Google API Key</a>.</p>
+<p>With the right stuff in place,</p>
+<pre><code>require &#039;rubygems&#039;
+require &#039;cgi&#039;
+require &#039;open-uri&#039;
+require &#039;hpricot&#039;</code></pre>
+<p>the <code>:lucky</code> screen scraping for example basically boils down to:</p>
+<pre><code>q = %w{meine kleine suchanfrage}.map { |w| CGI.escape(w) }.join(&quot;+&quot;)
+url = &quot;http://www.google.com/search?q=#{q}&quot;
+doc = Hpricot(open(url).read)
+lucky_url = (doc/&quot;div[@class=&#039;g&#039;] a&quot;).first[&quot;href&quot;]
+system &#039;open #{lucky_url}&#039;</code></pre>
+<p>and you can easily spot a problem here. <code>system &#039;open ...&#039;</code> is hardly cross platform, but on Mac OSX it opens the default browser with the given URL. To give users a chance to customize things a little i put settings in a defaults value hash which will be overwritten at startup by values loaded from a users preference file in their home directory. My built-in default values are:</p>
+<pre><code>C = {
+    :count  =&gt; 4,                       # number of results showed
+    :indent =&gt; 8, :tw =&gt; 70,            # indentation and descripton width 
+    :goog   =&gt; &quot;http://www.google.com&quot;, # where to ask?
+    :open   =&gt; &quot;system &#039;open ${url}&#039;&quot;,  # loads into HTTP browser on Mac OSX
+}</code></pre>
+<p>and the user preferences are loaded from: <code>~/.g</code></p>

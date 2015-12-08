@@ -1,0 +1,33 @@
+---
+layout: post
+title: coding art
+date: 2006-11-18 16:32:57.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- coding
+- ruby
+tags: []
+meta:
+  _publicize_job_id: '14401147128'
+  original_post_id: '46'
+  _wp_old_slug: '46'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<p><a href="http://project.ioni.st/post/966#post-966">this code</a> is a piece of art. It was the most inspiring use of ruby i've seen in a while. First there is:</p>
+<pre>class &lt;&lt; TODOS = IO.read('TODO')
+  # hand made TODO api here
+end</pre>
+<p>which wraps the String just loaded from disk in its very own, perfectly suited API. This is like hand made english cut vs. H&amp;M. And than there is:</p>
+<pre>items.grep(regexp).instance_eval do
+   def display
+     # custom display function here
+   end
+end</pre>
+<p>which again, does nicely fit a custom API around the found data. Doing it on the fly, no base classes, interfaces or and other sign of bothering the user with extraneous code. I just love it.</p>

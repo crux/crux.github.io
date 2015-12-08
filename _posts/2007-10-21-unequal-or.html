@@ -1,0 +1,28 @@
+---
+layout: post
+title: "'||' unequal 'or'"
+date: 2007-10-21 11:32:13.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- coding
+- ruby
+tags: []
+meta:
+  _publicize_job_id: '14401151407'
+  original_post_id: '134'
+  _wp_old_slug: '134'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<p>some simple ruby code:</p>
+<pre><code>a = nil || 23
+b = nil or 23
+puts "#{a==b}"</code></pre>
+<p>prints: <code>false</code>. Please explain! I mean explain in the sense of why not how it happens. Is it meaningful to put '||' and 'or' on a different level in the precedence hierarchy?</p>
+<p><em>UPDATE:</em>  i checked a couple of times before i posted but still can't reproduce it a day later. don't know what  was different yesterday, Jruby? confused, ... i seem that <code>puts "#{a == b}"</code> prints true. today.</p>

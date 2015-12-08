@@ -1,0 +1,38 @@
+---
+layout: post
+title: 'ruby user group berlin: JRuby, YARV/1.9, omdb.de and more'
+date: 2007-03-03 13:55:17.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- coding
+- community
+- english
+- events
+- java
+- OpenSource
+- ruby
+- 'understanding: IT'
+- whatever
+tags: []
+meta:
+  _publicize_job_id: '14401150206'
+  original_post_id: '110'
+  _wp_old_slug: '110'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<p>We had our 2nd <a href="http://www.rubyonrails-ug.de/wiki/berlin">ruby users group berlin</a> meeting yesterday with two speakers and the demo of the yet to be released <a href="http://www.omdb.org">omdb.org</a> project.</p>
+<p>First was <a href="http://www.rubyonrails-ug.de/wiki/timlossen">Tim Lossen</a> giving a good round-up of the <strong>JRuby developments</strong>. Not of much interest to me because i have’t touched Java in a while. There was a common understanding that <a href="http://jruby.codehaus.org/">JRuby</a> is a good thing and will pave Rubys way into the enterprise world, and with Sun now as official backing partner, <a href="http://jruby.codehaus.org/">JRuby</a> is heading for a 1.0 release this summer for Javaworld confererence. You can already run <a href="http://jruby.codehaus.org/">JRuby</a> based Rails applications inside you <span class="caps">IBM</span> Websphere Application server, Yeah! But can you run a Rails application with <a href="http://jruby.codehaus.org/">JRuby</a> from inside a Java applet on your client browser? Hm, interesting idea, we couldn’t answer that yesterday.</p>
+<p>Next was the talk by <a href="http://forum.ruby-portal.de/profile.php?mode=viewprofile&amp;u=73&amp;sid=c3be0574577a752cce3b13fde159eded">Murphy</a> about the state of the ruby 1.9 release. Murphy mainly used <a href="http://eigenclass.org/hiki.rb?Changes+in+Ruby+1.9">Mauricio Fernandez eigenclass</a> for reference and gave a really great overview around the three main themes of this topic: Roadmap, New and changed features and performance. Everybody loves the hand drawn roadmap image(which i can’t find now) and while a <strong>Ruby2.0 release</strong> being something from a far utopian future, we might see a 1.9 release later this year. I’m actually not following the <strong>1.9 developments</strong> but became inspired to check again. Enumerators for examples reminded me to my <span class="caps">STL</span>/C++ years, just now without the template pains :-)<br />
+Interessting were his <strong>comments on performance</strong>. Tim already showed some charts which related the <a href="http://jruby.codehaus.org/">JRuby</a> to some other implementations and Murphy made some own benchmarks which were pretty much in line with Tims data. The general information is that <strong>1.9(==YARV) is a couple of times faster</strong>, ranging from 3 to 10 times faster. <strong><span class="caps">BUT</span>!</strong> and that is a big but, Murphy did report that on the real life applications he tested, the speed-up was close to insignificant for various applications. This is because the the performance tuning in 1.9 seems to be focussing on benchmark relevant stuff. And <strong>real life application are hardly build from benchmark functionallity</strong>.  This sounds like, been there, seen that before. History(benchmark tweaking) is repeating itself. For me it doesn’t matter. When others can do <a href="http://joyeur.com/2007/02/04/a-brief-update-with-some-numbers-for-hardware-load-balanced-mongrels">4000 requests/second</a>, ruby/rails is definitly fast enough for me.</p>
+<p>Finally <a href="http://www.rubyonrails-ug.de/wiki/benjaminkrause">Benjamin Krause</a> showcased his upcoming <a href="http://www.omdb.org"><span class="caps">OMDB</span></a> project(<a href="http://blog.omdb-beta.org/">tech blog</a>, <a href="http://www.omdb-beta.org/">development version</a>, <a href="http://www.omdb.org">live</a>).  <a href="http://www.omdb.org"><span class="caps">OMDB</span></a> is a <a href="http://imdb.com">IMDb</a> in wikipedia style with a <a href="http://creativecommons.org/">creative commons</a> licence. <strong>16501 People</strong>(see comment) <strong><strike>16000 movies</strike> </strong><strong>are already in the database</strong> and once it will open up, everybody can extend it. Thats a cool idea conceptually and what he showed technically was nothing less than the equivalent to an “Full House” in poker. For example the subsecond async response times for fetching actors from a huge database which were made possible by his <a href="http://ferret.davebalmain.com/trac/">ferret</a> magic. impressive.</p>
+<p>And this also led to the <a href="http://www.rubyonrails-ug.de/wiki/doku.php#agenda_treffen">agenda for the next meeting</a> where Benjamin will give a talk about <a href="http://ferret.davebalmain.com/trac/">ferret</a> on Rails. Everybody wanted to see more of it. Also we will have a talk by <a href="http://www.rubyonrails-ug.de/wiki/adamgroves">Adam</a> about <em>AmzonWebServices: S3 and Rails on <span class="caps">EC2</span></em> . I’m looking forward to it. And about the open mic section, i’m pretty sure <a href="http://prodev.idmedia.com">we</a> are releasing our <a href="http://foto-foo.com">foto-foo</a> into the wild.</p>
+<p>And for you to have some fun, we plan to record the talks next time and put them up as podcasts to fit with your online consumption habits. Murphy and Tim also promised to upload their talks for online viewing <a href="http://www.rubyonrails-ug.de/wiki/berlin">(to the wiki i guess)</a>.</p>
+<p>looks like the <strong>ruby users group berlin</strong> is consolidating.</p>
+<p>Technorati Tags: <a class="performancingtags" rel="tag" href="http://technorati.com/tag/ruby">ruby</a>, <a class="performancingtags" rel="tag" href="http://technorati.com/tag/usergroup">usergroup</a>, <a class="performancingtags" rel="tag" href="http://technorati.com/tag/YARV">YARV</a>, <a class="performancingtags" rel="tag" href="http://technorati.com/tag/jruby">jruby</a>, <a class="performancingtags" rel="tag" href="http://technorati.com/tag/omdb">omdb</a>, <a class="performancingtags" rel="tag" href="http://technorati.com/tag/imdb">imdb</a>, <a class="performancingtags" rel="tag" href="http://technorati.com/tag/idmedia">idmedia</a>, <a class="performancingtags" rel="tag" href="http://technorati.com/tag/berlin">berlin</a>, <a class="performancingtags" rel="tag" href="http://technorati.com/tag/" /></p>

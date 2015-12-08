@@ -1,0 +1,39 @@
+---
+layout: post
+title: disable DIGEST-MP5 to xmpp4r connect with your openfire jabber server
+date: 2008-02-21 14:29:34.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- jabber
+- md5
+- openfire
+- ruby
+- sasl
+- sysadm
+- xmpp
+- xmpp4r
+tags: []
+meta:
+  _publicize_job_id: '14401152278'
+  original_post_id: '151'
+  _wp_old_slug: '151'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<p>in my typical love and hate relationship with opensource&nbsp; (aka open sore) i stumbled over SASL induced configuration pains again today. To cut a long story short, just disable DIGEST-MD5 sasl out on the <a href="http://www.igniterealtime.org/builds/openfire/docs/latest/documentation/index.html">openfire</a> jabber server and immediatly <a href="http://rubyforge.org/projects/xmpp4r/">xmpp4r</a> works like a charm for me. </p>
+<p>How to disable digest md5 on Openfire? <a href="http://www.google.com/search?q=openfire+disable+MD5&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a">Not so easy to find out</a> and in a beautiful amateuristic way lots of <a href="http://www.igniterealtime.org/community/message/152653">the advice you find is actually plain wrong</a>. </p>
+<p>Put this into your openfire.xml:
+<pre><code>&lt;sasl&gt;&lt;mechs&gt;PLAIN&lt;/mechs&gt;&lt;/sasl&gt; <br />&lt;!-- but put it inside the &lt;jive&gt;...&lt;/jive&gt; tags somewhere --&gt; <br /></code></pre>
+<p>, because when you know <a href="http://www.igniterealtime.org/community/docs/DOC-1061">the name of the right openfire property</a>, and are able to read(in openfire.xml):
+<pre><code>&nbsp;&nbsp;&nbsp; This file stores bootstrap properties needed by Openfire.<br />&nbsp;&nbsp;&nbsp; Property names must be in the format: "prop.name.is.blah=value"<br />&nbsp;&nbsp;&nbsp; That will be stored as:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;prop&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;name&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;is&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;blah&gt;value&lt;/blah&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/is&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/name&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/prop&gt;</code></pre>
+<p>,then you easily know that <span style="text-decoration:line-through;">&lt;sasl&gt;&lt;mechanisms&gt;....&lt;/mechanisms&gt;&lt;/sasl&gt;</span> is bogus.</p>
+<p>you usually find your openfire.xml at <code>${OPENFIRE_HOME}/conf/openfire.xml</code>. and you must restart the the server afterwards, like <code>/etc/init.d/openfire restart</code>.</p>
+<p>there is another option, like making the xmpp4r implementation don't even try to use the digest-md5 mechanism which the openfire server offers. Just disabling DIGEST-Md5 acceptance at <code>/opt/local/lib/ruby/gems/1.8/gems/xmpp4r-0.3.2/lib/xmpp4r/client.rb:108</code> in <code>Jabber::Client.auth</code> does work, but i will try to get it implemented a littel more selective before posting a xmpp4r fix here. Who knows, there even might be two SASL DIGEST-MD5 implementations on this planet which actually do match? i doubt it, an even then, i don't care. vote for alt.source.sasl-must-die-die-die and</p>
+<p>have fun</p>
+<p>Technorati Tags: <a class="performancingtags" href="http://technorati.com/tag/xmpp" rel="tag">xmpp</a>, <a class="performancingtags" href="http://technorati.com/tag/xmpp4r" rel="tag">xmpp4r</a>, <a class="performancingtags" href="http://technorati.com/tag/openfire" rel="tag">openfire</a>, <a class="performancingtags" href="http://technorati.com/tag/jabber" rel="tag">jabber</a>, <a class="performancingtags" href="http://technorati.com/tag/sasl" rel="tag">sasl</a>, <a class="performancingtags" href="http://technorati.com/tag/digest-md5" rel="tag">digest-md5</a></p>

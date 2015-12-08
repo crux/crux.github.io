@@ -1,0 +1,45 @@
+---
+layout: post
+title: I dropped YAML in favour of plain ruby for config files
+date: 2007-01-28 10:46:50.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- coding
+- java
+- ruby
+tags: []
+meta:
+  _publicize_job_id: '14401149459'
+  original_post_id: '96'
+  _wp_old_slug: '96'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<p>write: <code class="ruby">h = { :a =&gt; 123, :b =&gt; "321", 'c' =&gt; 0.123 }</code></p>
+<p>instead of</p>
+<pre><code class="ruby">---
+ :a: 123
+ c: 0.123
+ :b: "321"
+</code></pre>
+<p>like a lot of people i put config values in hashes and used YAML to read them from file. Take <code>database.yml</code> in Rails for example. YAML feels like coder nirvana when you have suffered from XML pain in Java land for many years. YAML syntax is so much nicer.  But to express ruby values, plain ruby syntax for me is even more straight forward. To check syntax I always had to try and err  before use with <code>YAML.dump {:foo=&gt;"bar"}</code>. </p>
+<p><span style="font-family:monospace;"></span>I thought about just writing plain ruby and <span style="font-style:italic;">eval</span> it. Problem is, <span style="font-style:italic;">eval</span> avoids polluting the global namespace and the variables you set in an evaled file will not show up anywhere. Using global variables(yuck), constants, @@ variables or similar constructs would defy the purpose of getting a nice syntax for the user. </p>
+<p>Then I got the idea of using the introspecitve powers of ruby to the retrieve the local variables which got defined on evaling a file from the binding. I wrote a function which does exactly this. From a known binding it extracts the loaded variables afterwards. The values are then injected into a hash an returned.</p>
+<pre>def load_values_from_file(filepath)
+    b = binding
+    v1 = eval "local_variables", b
+    eval IO.read(filepath), b
+    v2 = eval "local_variables", b
+    (v2 - v1).inject({}) do |c, key|
+        c[key.to_sym] = eval "#{key}", b
+        c
+    end
+end</pre>
+<p>and my future config files will be plain ruby, which I know better than YAML syntax.</p>
+<p>Technorati Tags: <a class="performancingtags" href="http://technorati.com/tag/ruby" rel="tag">ruby</a>, <a class="performancingtags" href="http://technorati.com/tag/yaml" rel="tag">yaml</a>, <a class="performancingtags" href="http://technorati.com/tag/DSL" rel="tag">DSL</a></p>

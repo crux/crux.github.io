@@ -1,0 +1,49 @@
+---
+layout: post
+title: simpler comandline application context/configs
+date: 2006-10-21 11:41:16.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- coding
+- OpenSource
+- ruby
+tags: []
+meta:
+  _publicize_job_id: '14401146572'
+  original_post_id: '35'
+  _wp_old_slug: '35'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<p>A couple of days ago i stumbled upon the <a href="http://t0fuu.wordpress.com/2006/09/16/building-console-apps-with-simpleconsole/trackback/">SimpleConsole</a>. Really a nice piece of software, pretty close to what i was pondering about already for some time. And just two weeks before i did put up (try: <code>gem install app-ctx</code>) my own take on that. <a href="http://rubyforge.org/projects/app-ctx/">App-ctx</a> shares some of the design decisions of SimpleConsole like
+<ul>
+<li>ruby classes as controllers</li>
+<p>
+<li>automatic method invokation from arguments</li>
+<p>
+<li>parameter parsing and conversion</li>
+<p></ul>
+<p>still though, app-ctx has some differences, and tries to be just a little simpler(and add some more). You might use classes, similar to SimpleConsole:
+<pre class="ruby code"><br />class Simple<br />    def add context<br />        a, b = context.argv<br />        puts "#{a} + #{b} = #{a + b}"<br />    end<br />end<br /><br />App::run :class =&gt; Simple<br /></pre>
+<p>Argument type conversions are build in, no declarations: <code>"foo<br />bar"</code> becomes a string, <code>23</code> a int and <code>3.14</code> a Float. Same with options: --int=23 --text="some text here" --float=3.14.</p>
+<p>But I did not want to force this inheritance thing upon the humble user so she can use her own baseclasses(SimpleConsole::Controller maybe?). Next, i wanted to support blocks, just being more ruby like:
+<pre class="ruby code"><br />class Simple<br />    # $ ./examples/run_with_block.rb add 1 5<br />    # 1 + 5 = 6<br />    # $<br />    def add a, b<br />        puts "#{a} + #{b} = #{a + b}"<br />    end<br /><br />    # $ ./examples/run_with_block.rb sub 1 5<br />    # 1 - 5 = 6<br />    # $<br />    def sub a, b<br />        puts "#{a} - #{b} = #{a - b}"<br />    end<br />end<br /><br />App::run do |context|<br />    puts context<br />    Simple.new.send(context.argv.shift, *context.argv)<br />end<br /></pre>
+<p>The general setup of the comand line i wanted to stay good old unix style: <code> &lt;comand&gt; [options] [arguments...]</code> only. I don't like these: <code>&lt;comand&gt; --foo --bar=1 action --help</code> where there are more options after the last argument.</p>
+<p>And than there is the problem with resonable default values. You need configuration and app-ctx defines some clear rules on where to put them. On default, app-ctx pulls a YAML default values file from next to where your application script lives, e.g:</p>
+<pre class="ruby code">$ ~/bin/my-script.rb</pre>
+<p>preloads its default values from 
+<pre>~/bin/my-script.yml</pre>
+<p>Values from the command line then will simply overload setting from your config file and your app can't distinguish from where the values are actually coming. Thisway you can extract default values from your code an put them in a separate file.</p>
+<p>But if you prefer to keep things together instead, you may also set defaults directly from the code:
+<pre class="ruby code"><br />class Simple<br />    def initialize(context)<br />        context.set_default_values({<br />            :desc =&gt; "programatically setting default values",<br />            :port =&gt; 1234,<br />        })<br />    end<br /><br />    def show context<br />        puts context<br />    end<br />end<br /><br />App::run :class =&gt; Simple<br /></pre>
+<p>app-ctx tries calling a c'tor of your class with a context argument and you can set your default values there. Last but not least, you can define from where to load the config file with a command line option:
+<pre>~/bin/my-script --config=/tmp/bogus-setup-here show</pre>
+<p>will not load the <code>~/bin/my-script.rb</code> but the one you supplied.</p>
+<p>Thats most of the stuff i could recall right now and if you like it, go ahead use it. In case you do, i might feel challenged to put up some concise online documentation and a little tutorial. 'till then</p>
+<p>have fun</p>

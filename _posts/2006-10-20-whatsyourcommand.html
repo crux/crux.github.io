@@ -1,0 +1,25 @@
+---
+layout: post
+title: whatsyourcommand
+date: 2006-10-20 18:08:03.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- coding
+- OpenSource
+tags: []
+meta:
+  _publicize_job_id: '14401146530'
+  original_post_id: '34'
+  _wp_old_slug: '34'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<p><code>function whatsyourcommand () <br />{ <br />&nbsp;&nbsp;&nbsp; history | awk '{print $2}' | sort | uniq -c | sort -n | tail -23<br />}</code></p>
+<p>this little bash function pulls some stats from your history:</p>
+<p>&nbsp;&nbsp; 3 tar<br />&nbsp;&nbsp; 4 %1<br />&nbsp;&nbsp; 4 %2<br />&nbsp;&nbsp; 4 nmap<br />&nbsp;&nbsp; 5 rake<br />&nbsp;&nbsp; 5 vi<br />&nbsp;&nbsp; 6 irb<br />&nbsp;&nbsp; 7 ./t_graph.rb<br />&nbsp;&nbsp; 7 open<br />&nbsp;&nbsp; 8 dwhatsnew<br />&nbsp;&nbsp; 8 geheim<br />&nbsp;&nbsp; 9 ifconfig<br />&nbsp; 11 mysql<br />&nbsp; 14 pgoogle<br />&nbsp; 17 svn<br />&nbsp; 17 telnet<br />&nbsp; 18 syncdir<br />&nbsp; 20 ping<br />&nbsp; 29 cd<br />&nbsp; 36 j<br />&nbsp; 43 ./t_instant-instance-config.rb<br />&nbsp; 70 ls<br />&nbsp; 98 fg</p>

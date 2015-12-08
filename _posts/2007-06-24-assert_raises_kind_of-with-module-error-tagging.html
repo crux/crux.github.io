@@ -1,0 +1,63 @@
+---
+layout: post
+title: assert_raises_kind_of with Module error tagging
+date: 2007-06-24 21:44:00.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- coding
+- fun
+- ruby
+- whatever
+tags: []
+meta:
+  _publicize_job_id: '14401150792'
+  original_post_id: '122'
+  _wp_old_slug: '122'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<p>this sunny sunday afternoon i was putting together some utility code(stupid me!) to do some remote blogging from the shell or the cosy inside of my vim editing session. This for some later time, but while i was going on with my test-driven/test first development i hit the problem of missing a test to check for the base class of my errors. I wanted to:</p>
+<pre><code>assert_raise(StandardError) { @blog.find_post(:postid =&gt; 123456789) }</code></pre>
+<p>to generally check for any kind of trouble bubbling up but it was not working as expected. Instead i got nasty Failure reports:</p>
+<pre><code>1) Failure:
+test_find_post(XMLRPCTest) [mylib.rb:83]:
+&lt;StandardError&gt; exception expected but was
+Class: &lt;XMLRPC::FaultException&gt;
+Message: &lt;&quot;Sorry, no such post.&quot;&gt;</code></pre>
+<p>I suspected <code>XMLRPCTest::FaultException</code> to maybe not beeing derived from StandardError, but that was not the case. A look in the <a href="http://www.ruby-doc.org/core/classes/Test/Unit/Assertions.html#M006671">ruby documentation</a> and the <a href="http://www.ruby-forum.com/topic/57328">ruby-talk</a> thread confirmed:</p>
+<p><strong><code>assert_raise(*args) {|| ...}</code> is checking for the EXCACT exception type only!</strong></p>
+<h3 id="how_was_it_for_you">How was it for you?</h3>
+<p>On the <a href="http://www.ruby-forum.com/topic/57328">ruby-talk</a> mailing list there was a little discussion about this topic and i pretty much agree with all the <strong>+1</strong> sayers on the list. <a href="http://www.ruby-forum.com/topic/57328#170232">Edwin Fine</a> propsed adding his own <code>assert_raise_s</code> method the Assertions class. You easily get into muddy waters with <em>opening</em> standard ruby classes for some duck-typing but reverting to:</p>
+<pre><code>assert_raise(XMLRPC::FaultException) { @blog.find_post(:postid =&gt; 123456789) }</code></pre>
+<p>was not an option. This would expose way to much implementation detail to this very high level coding of the very first tests so early in the project. So I was <a href="http://computing-dictionary.thefreedictionary.com/Use+the+Source+Luke">using the source, as yoda said</a> and found another solution for me.</p>
+<h3 id="modules_as_base_class_arguments_to_">Modules as base class arguments to <code>assert_raises</code></h3>
+<p>After i read <a href="http://www.ruby-forum.com/topic/57328#170232">Edwin&#8217;s</a> post i checked the source for <code class="ruby">def<br />
+assert_raise</code> and learned that this method is actually checking for some kind of exception base class. The argument to <code>assert_raise</code> is an array of exception types. <code>assert_raise</code> does partition this types into <code>Class</code> and <code>Module</code>.</p>
+<p>The <code>assertion_raise</code> checks for <code>Class</code> types is exact, but the <code>Module</code> is not(can&#8217;t be). They are checked with an <code>is_a?</code> condition - there can&#8217;t be no object instance of module type or course.</p>
+<p>My original test therefor simply fails because <code>StandardError</code> is not a <code>Module</code> but a class. The <code>XMLRPC::FaultException</code> implementation is not mine but it is bubbling through my lib which i&#8217;m testing and this is precisly the condition i want to write tests for.</p>
+<h3 id="module_tagged_exceptions_and_"><em>&#8220;Module tagged&#8221;</em> exceptions and <code>assert_raises_kind_of</code></h3>
+<p>First i wrote an empty <em>tagging</em> module for lib to tag all Errors and exceptions coming from my lib:</p>
+<pre><code>module MyLib
+    module Error; end
+end</code></pre>
+<p>Now i can tag all exception from some deeper laying code with my Error module:</p>
+<pre><code>begin
+    ...
+rescue =&gt; e # errors bubbling from the underworld
+        # tag it
+    class &lt;&lt; e; include MyLib::Error; end 
+        # throw it
+    raise e
+end</code></pre>
+<p>Voila, and now i can write:</p>
+<pre><code>assert_raise(BlogMist::Error) { @blog.find_post(:postid =&gt; 123456789) }</code></pre>
+<p>and finally got what i wanted but you&#8217;re milage may vary. Basically this gives me a way to create some kind of folksonomy of errors coming from my library. Don&#8217;t know yet where this might lead me, but hey, ruby is the best for protoyping and playing around!</p>
+<h3 id="dont_be_lazy">Don&#8217;t be lazy!</h3>
+<p>Testing for error base classes instead of pricise error handling is not to make you lazy! As discussed on the <a href="http://www.ruby-forum.com/topic/57328">forum thread</a> it is to start with tests early on and being able to refine error condition testing over time.</p>
+<p>Technorati tag: <a href="http://technorati.com/tag/ruby" rel="tag">ruby</a>, <a href="http://technorati.com/tag/ducktyping" rel="tag">ducktyping</a>, <a href="http://technorati.com/tag/assert_raise" rel="tag">assert_raise</a>, <a href="http://technorati.com/tag/test-first" rel="tag">test-first</a>, </p>

@@ -1,0 +1,31 @@
+---
+layout: post
+title: ruby google charts api wrapper, RFC2396 and ruby open-uri woes
+date: 2008-01-11 18:04:21.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- horror
+- ruby
+tags: []
+meta:
+  _publicize_job_id: '14401151774'
+  original_post_id: '141'
+  _wp_old_slug: '141'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<p><b>UPDATE:</b>found a <a href="http://www.sofasportler.de/dirk.blog/articles/googlecharts-gem-uriinvalidurierror-fixed">simple fix/hack for the googlecharts gem</a></p>
+<p><img src="{{ site.baseurl }}/assets/2184980145_9ec1c58acf.jpg?v=0" /></p>
+<p>Uhh!, this for sure is one of the more scary regular expressions you normally encounter. Its <code>URI::REGEXP::PATTERN::ABS_URI</code> from  <code>uri/common.rb:137</code>. Looks complete, doesn't it? And still it fails to grasp my seemingly valid Google Charts URL which is: <code><a href="http://chart.apis.google.com/chart?chdl=requests%28cached%29%7Crequests&amp;chd=s:Fb9JJfgZ,Fb9KJfgq&amp;cht=lc&amp;chs=300x200">http://chart.apis.google.com/chart?chdl=requests(cached)|requests&amp;chd=s:Fb9JJfgZ,Fb9KJfgq&amp;cht=lc&amp;chs=300x200</a></code></p>
+<p>It's the <a href="http://googlecharts.rubyforge.org/">googlecharts gem</a> which creates this URL here(not me!), but than bails out when trying to download an image from it. 
+<pre><code>/opt/local/lib/ruby/1.8/uri/common.rb:436:in `split': bad URI(is not URI?):...</code></pre>
+<p>Now, who is right? Google? The URI RFC2396? <a href="http://googlecharts.rubyforge.org/">The googlecharts gem</a>? Debugging such things are the less thrilling moments in life. </p>
+<p>Besides that, even when bailing out on this one, the googlecharts gem feels good. It offers efortless chart creation and basic cases are already covered, the advanced stuff will follow i think. Go check it out when in search for an easy charting solution. Googlecharts gem felt better to me than the <a href="http://code.google.com/p/gchartrb">gchartrb</a> which is another wrapper for the same service, but your milage may vary.</p>
+<p>have fun</p>
+<p>Technorati Tags: <a class="performancingtags" href="http://technorati.com/tag/ruby" rel="tag">ruby</a>, <a class="performancingtags" href="http://technorati.com/tag/googlecharts" rel="tag">googlecharts</a>, <a class="performancingtags" href="http://technorati.com/tag/api" rel="tag">api</a></p>

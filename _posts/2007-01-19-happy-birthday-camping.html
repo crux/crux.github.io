@@ -1,0 +1,28 @@
+---
+layout: post
+title: Happy birthday Camping
+date: 2007-01-19 09:09:59.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- coding
+- events
+- OpenSource
+- ruby
+tags: []
+meta:
+  _publicize_job_id: '14401149081'
+  original_post_id: '88'
+  _wp_old_slug: '88'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<p><a href="http://redhanded.hobix.com/cult/campingSYouthfulnessWinsAnnualAward.html">
+<pre style="background-color:rgb(238,255,221);text-align:center;font-size:10px;">%w[active_support markaby tempfile uri].map{|l|require l}<br />module Camping;Apps=[];C=self;S=IO.read(__FILE__).sub(/S=I.+$/,'')<br />P="Camping Problem!";module Helpers;def R(c,*g);p,h=/(.+?)/,g.grep(Hash)<br />(g-=h).inject(c.urls.find{|x|x.scan(p).size==g.size}.dup){|s,a|s.sub p,C.<br />escape((a[a.class.primary_key]rescue a))}+(h.any?? "?"+h[0].map{|x|x.map{|z|C.<br />escape z}*"="}*"&amp;": "")end;def URL c='/',*a;c=R(c,*a)if c.respond_to?:urls<br />c=self/c;c="//"+@env.HTTP_HOST+c if c[/^//];URI(c)end;def/p;p[/^//]?@root+p :<br />p end;def errors_for o;ul.errors{o.errors.each_full{|x|li x}}if o.errors.any?end<br />end;module Base;include Helpers;attr_accessor:input,:cookies,:env,:headers,:body,<br />:status,:root;def method_missing*a,&amp;b;a.shift if a[0]==:render;m=Mab.new {},self<br />s=m.capture{send(*a,&amp;b)};s=m.capture{send(:layout){s}} if /^_/!~a[0].to_s and m.<br />respond_to?:layout;s end;def r s,b,h={};@status=s;@headers.merge!h;@body=b end<br />def redirect*a;r 302,'','Location'=&gt;URL(*a)end;Z="rn";def to_a;[@status,@body,<br />@headers]end;def initialize r,e,m;e=H[e.to_hash];@status,@method,@env,@headers,<br />@root=200,m.downcase,e,{'Content-Type'=&gt;"text/html"},e.SCRIPT_NAME.sub(//$/,'')<br />@k=C.kp e.HTTP_COOKIE;q=C.qsp e.QUERY_STRING;@in=r;if%r|Amultipart/form-.*boun<br />dary="?([^";,]+)|n.match e.CONTENT_TYPE;b=/(?:r?n|A)#{Regexp::quote("--#$1" <br />)}(?:--)?r$/;until@in.eof?;fh=H[];for l in@in;case l;when Z;break<br />when/^Content-D.+?: form-data;/;fh.u H[*$'.scan(/(?:s(w+)="([^"]+)")/).flatten]<br />when/^Content-Type: (.+?)(r$|Z)/m;fh[:type]=$1;end;end;fn=fh[:name];o=if<br />fh[:filename];o=fh[:tempfile]=Tempfile.new(:C);o.binmode;else;fh=""end;while l=@in.<br />read(16384);if l=~b;o&lt;&lt;$`.chomp;@in.seek(-$'.size,IO::SEEK_CUR);break;end;o&lt;<br />end;C.qsp(fn,'&amp;;',fh,q) if fn;fh[:tempfile].rewind if fh.is_a?H;end;elsif@method==<br />"post";q.u C.qsp(@in.read)end;@cookies,@input=@k.dup,q.dup end;def service*a<br />@body=send(@method,*a)if respond_to?@method;@headers["Set-Cookie"]=@cookies.map{<br />|k,v|"#{k}=#{C.escape(v)}; path=#{self/'/'}"if v!=@k[k]}-[nil];self end;def to_s<br />a=[];@headers.map{|k,v|[*v].map{|x|a&lt;&lt;"#{k}: #{x}"}};"Status: #{@status}#{Z+a*Z+<br />Z*2+@body}"end;end;X=module Controllers;@r=[];class&lt;<br />r=@r;Class.new{meta_def(:urls){u};meta_def(:inherited){|x|r&lt;<br />end;constants.map{|c|k=const_get(c);k.send:include,C,Base,Models;r[0,0]=k if<br />!r.include?k;k.meta_def(:urls){["/#{c.downcase}"]}if !k.respond_to?:urls}end;def<br />D p;r.map{|k|k.urls.map{|x|return k,$~[1..-1]if p=~/^#{x}/?$/}};[NotFound,[p]]end<br />end;class NotFound<br />class ServerError<br />} #{e.message}:";ul{e.backtrace.each{|bt|li(bt)}}}.to_s)end end;self;end;class&lt;&lt;<br />self;def goes m;eval S.gsub(/Camping/,m.to_s).gsub("Apps=[]","Camping::Apps&lt;&lt;<br />self"),TOPLEVEL_BINDING;end;def escape s;s.to_s.gsub(/[^ w.-]+/n){'%'+($&amp;.<br />unpack('H2'*$&amp;.size)*'%').upcase}.tr(' ','+')end;def un s;s.tr('+',' ').gsub(<br />/%([da-f]{2})/in){[$1].pack('H*')}end;def qsp q,d='&amp;;',y=nil,z=H[];m=proc{|_,o,n|o.u(<br />n,&amp;m)rescue([*o]&lt;split('=',2);h.u k.split(/[][]+/).reverse.inject(y||v){|x,i|H[i,x]},&amp;m}end;def<br />kp s;c=qsp(s,';,')end;def run r=$stdin,e=ENV;X.M;k,a=X.D un("/#{e[<br />'PATH_INFO']}".gsub(//+/,'/'));k.new(r,e,(m=e['REQUEST_METHOD']||"GET")).Y.<br />service *a;rescue Object=&gt;x;X::ServerError.new(r,e,'get').service(k,m,x)end<br />def method_missing m,c,*a;X.M;k=X.const_get(c).new(StringIO.new,H['HTTP_HOST',<br />'','SCRIPT_NAME','','HTTP_COOKIE',''],m.to_s);H.new(a.pop).each{|e,f|k.send(<br />"#{e}=",f)}if Hash===a[-1];k.service *a;end;end;module Views;include X,Helpers<br />end;module Models;autoload:Base,'camping/db';def Y;self;end;end;class Mab&lt;<br />Markaby::Builder;include Views;def tag!*g,&amp;b;h=g[-1];[:href,:action,:src].map{<br />|a|(h[a]=self/h[a])rescue 0};super end end;H=HashWithIndifferentAccess;class H<br />def method_missing m,*a;m.to_s=~/=$/?self[$`]=a[0]:a==[]?self[m]:raise(<br />NoMethodError,"#{m}")end;alias_method:u,:regular_update;end end<br /></pre>
+<p></a></p>
+<p><a href="http://whytheluckystiff.net/">Whys</a> amazing <a href="http://redhanded.hobix.com/bits/campingAMicroframework.html">camping web framework</a> in just 4k lines of code <a href="http://redhanded.hobix.com/cult/campingSYouthfulnessWinsAnnualAward.html">celebrates its first birthday</a>! All the best wishes and a little reminder to me to do more with less.</p>

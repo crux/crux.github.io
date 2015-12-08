@@ -1,0 +1,47 @@
+---
+layout: post
+title: Get yourself organized with GTD, from the shell
+date: 2007-07-04 09:38:20.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- coding
+- ruby
+tags: []
+meta:
+  _publicize_job_id: '14401151090'
+  original_post_id: '129'
+  _wp_old_slug: '129'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<h2 id="get_yourself_organized_with_gtd_from_the_shell">Get yourself organized with GTD, from the shell</h2>
+<p>promoting GTD might be surprising from me because it&#8217;s kind of <a href="http://www.sofasportler.de/dirk.blog/articles/gtd-is-the-right-thing-in-the-wrong-direction">contradicting myself</a>. I have great doubts in any tool claiming to solve the problem for you, but this time it might be different. <a href="http://www.rubyinside.com/how-to-build-simple-console-apps-with-ruby-and-activerecord-538.html">Peter Copper</a> drove my attention to <a href="http://www.oreillynet.com/pub/a/ruby/2007/06/21/how-to-build-simple-console-apps-with-ruby-and-activerecord.html">EarGTD</a> of <a href="http://www.oreillynet.com/pub/au/2593">Gregory Brown</a>.</p>
+<p><a href="http://www.oreillynet.com/pub/a/ruby/2007/06/21/how-to-build-simple-console-apps-with-ruby-and-activerecord.html">EarGTD</a> is a console application for David Allen&#8217;s <a href="http://en.wikipedia.org/wiki/Getting_Things_Done">GTD</a> method. It is a good example for a <em>Ruby outside of Rails</em> application which still uses the ORM powers of <code>ActiveRecord</code>.</p>
+<p>The commandline is where i spend lots my productive time and having a framework for database driven applications could be boost. Actually i already made myself a <a href="http://www.sofasportler.de/dirk.blog/google-console-application-g-module">google console app</a><a href="http://www.sofasportler.de/dirk.blog/assets/g-module-0.0.4.gem">(g-module alpha gem)</a>, example:</p>
+<pre><code>$ google :count earGTD
+158 results for [&quot;eargtd&quot;]
+$ google :lucky earGTD </code></pre>
+<p>gives you google result on the commandline.</p>
+<p>Adding ActiveResource/database access to my console apps is a big help for me. <a href="http://www.cryptonomicon.com/beginning.html">&#8220;In the Beginning was the Command Line&#8221;</a> and i start seeing a pattern here that i like.</p>
+<h3 id="extending_gtd">Extending GTD</h3>
+<p>I will now go using EarGTD to find out how it works for me but there are 3 things would like to add i find time to do so:</p>
+<p>1. keeping removed tasks in the database and add a <code>done</code> flag to them. This could make gtd a good tools for automated reports.</p>
+<p>2. make a distributed group version where a bunch of people works on the same dataset. This coule make it a good sync tool for a group of coders.</p>
+<p>3. to <code>project</code> and <code>context</code> add a <code>person</code> attribute, but that is actually only a sub-feature of the previous point.</p>
+<p>4. <em>must have:</em> twitter connection!</p>
+<h3 id="install_notes">install notes</h3>
+<p>Me beeing to lazy to gem&#8217;ify it just added:</p>
+<pre><code>require &quot;fileutils&quot;
+FileUtils.cd(File.dirname(__FILE__))
+$:.unshift &quot;.&quot;</code></pre>
+<p>to the <code>earGTP</code> script itself and made an</p>
+<pre><code>alias gtd=~/EarGTD/earGTD</code></pre>
+<p>so i now can call it form anywhere. e nu?</p>
+<pre><code>gtd + &quot;write better posts [blog] &lt;writing&gt;&quot;</code></pre>
+<p>cheers</p>

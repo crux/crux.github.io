@@ -1,0 +1,32 @@
+---
+layout: post
+title: crontab'ed linden mania with hpricot
+date: 2007-02-03 12:57:04.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- coding
+- english
+- OpenSource
+- ruby
+tags: []
+meta:
+  _publicize_job_id: '14401149577'
+  original_post_id: '98'
+  _wp_old_slug: '98'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<p><img style="float:right;" src="{{ site.baseurl }}/assets/379777615_5d58878ea3.jpg?v=0" />a kind of buzzwordy post title, i know, but hey, at least i kept the unavoidable <a href="http://secondlife.com/">second life</a> out of it. For reasons far from being thrilling enough to tell here i pulled <a href="http://redhanded.hobix.com/inspect/andNowHpricot05IsYours.html">the latest hpricot release</a> and made my server pull the latest stats from linden labs frontpage every 6 hours. I'm kind of sad I could not get it up before the (ridiculous)3293499 residents mark, but once SL will hit the billion, it will still look like a pioneer. So here is the beef: I made a cronjob screenscraping secondlife's stats from their frontpage. A nice graph from the data i will put up soon hopefuly. And stay tuned for the raw data feed if you like.  Lets see, a week i guess, before it becomes a nice exponential curve.</p>
+<p>1. get value elements from the stats div</p>
+<pre>v = Hpricot(open("http://www.secondlife.com")).search("#SL_stats strong")</pre>
+<p>2. make it digestible</p>
+<pre>v.map { |e| e.innerText.gsub(/[$,]/, "").to_i }</pre>
+<p>3. dump the stuff</p>
+<pre># is left as an exercise to the reade</pre>
+<p>and <a href="http://www.sofasportler.de/dirk.blog/wp-content/trac-sl.rb">mine you'll get right here.</a></p>

@@ -1,0 +1,45 @@
+---
+layout: post
+title: I am annoyed
+date: 2006-08-21 18:30:03.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- OpenSource
+- whatever
+tags: []
+meta:
+  _publicize_job_id: '14401146181'
+  original_post_id: '24'
+  _wp_old_slug: '24'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<p>My fault i did not read the documentation(where to find it?), and i'm still grateful for the <a href="http://dojotoolkit.org/">dojo toolkit</a>, but please, from a <code>testScripting</code> ant target i definitly do not expect 1) to  install its configuration/extension/script files in my home directory(unasked!) and then 2) quitting with <code>BUILD FAILED </code> and complain about the author of the Ant build tool. This is rude.</p>
+<p>I can agree with <a href="http://blogs.pathf.com/agileajax/2006/08/and_interview_w.html">Alex Russels dislike for Java and Ant</a>, but still, i would be perfectly pissed when i would be the the author of ant and Alex just complains about "horrendous design decisions by the authors". Maybe true, but please, at least a hint about what caused the problem should be given.<br />
+<code><br />
+dluesebrink dl-mbook trunk/buildscripts: ant testScripting<br />
+Buildfile: build.xml</code></p>
+<p>-check-config:</p>
+<p>-fix-config:<br />
+[copy] Copying 5 files to /Users/dluesebrink/.ant/lib</p>
+<p>[echo] +--------------------------------------------------------+<br />
+[echo] | Due to some horrendous design decisions by the authors |<br />
+[echo] | of Ant, it has been necessary to install some jar     |<br />
+[echo] | files to your ~/.ant/ directory. Given the nature of   |<br />
+[echo] | the problem, it will be necessary for you to re-run   |<br />
+[echo] | your build command.                                    |<br />
+[echo] |                                                        |<br />
+[echo] | The Dojo team apologies for this inconvenience.        |<br />
+[echo] |                                                        |<br />
+[echo] | The system will now exit.                              |<br />
+[echo] +--------------------------------------------------------+</p>
+<p>BUILD FAILED<br />
+/Users/dluesebrink/idmedia/Project-3/resources/dojo/trunk/buildscripts/build.xml:226: Sorry, please re-run your build command, it should work now</p>
+<p>Total time: 1 second<br />
+back my pardon, but i doubt it. I wrote a lot of Ant files in my life, and never there was an unavoidable need to install .jar files in the home directory of the calling user. this is just ONE option. for me it looks more like beeing to lazy to bother, but i'm to lazy to track it down.</p>

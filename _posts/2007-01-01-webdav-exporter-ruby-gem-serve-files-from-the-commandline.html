@@ -1,0 +1,36 @@
+---
+layout: post
+title: 'webdav-exporter ruby gem: serve files from the commandline'
+date: 2007-01-01 14:41:37.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- apple &amp; OSX
+- coding
+- ruby
+- test
+- 'understanding: IT'
+tags: []
+meta:
+  _publicize_job_id: '14401148281'
+  original_post_id: '73'
+  _wp_old_slug: '73'
+author:
+  login: joesixpack
+  email: dirk.luesebrink@gmail.com
+  display_name: dirk lüsebrink
+  first_name: ''
+  last_name: ''
+---
+<p>I finally got around packing my WebDAV experiments into a gem to put it on rubyforge for easy deployments. <a href="https://rubyforge.org/projects/webdav-exporter/"><code>sudo gem install webdav-exporter</code></a> should do.</p>
+<p>What it does is to install an executable ruby script by which you can start-up a webdav fileserver right from your comandline with no need for further setup. </p>
+<p><span style="font-weight:bold;">WARNING: this is super alpha! tested on my macbook only!</span></p>
+<p><code>webdav-exporter.rb ~/taxi</code></p>
+<p>for example will export the taxi folder in your home directory. The webdav-exporter gem is build on top or Tatsuki Sugiura WEBrick WebDAV handler gem(<code>gem install webrick-webdav</code>), which in turn builds on top of the ruby build-in webrick server.</p>
+<p>I tricked the webdav servlet into claiming DAV2 protocol compliance. This was to make writable mounts on my mac possible. With DAV1 and no LOCK method implementation my mac osx refused to mount the exported files as writable, and without writable mounts the whole webdav is not worth the efforts of course.
+<pre><code class="ruby"><br />    def do_OPTIONS(req, res) <br />        super <br />        res["DAV"] = "1,2" <br />    end <br /><br />    def do_LOCK(req, res)<br />        res.body &lt;&lt; "&lt;XXX-#{Time.now.to_s}/&gt;"<br />    end<br /></code></pre>
+<p>you see what i mean with <span style="font-style:italic;">tricked, </span>but this is actually quite ok for 1. it works on my macbook, 2. it gets me rid of the annoying errors when not having a do_LOCK method at all and 3. the <a href="http://www.liverail.net/articles/2006/06/25/webdav-ruby-on-rails-plugin">webdav rails plugin</a> does actually not do any better concerning the LOCK implementation.</p>
+<p>So, no need starting a rails app or talk to your sysad for easy filesharing any more. The server does HTTPS only and for the default 443 port you need root permissions. For the SSL stuff all credits go to <span class="name"><a href="http://gmarrone.objectblues.net/cgi-bin/wiki/WebDAV_-_Linux_server%2c_Mac_OS_X_client">Gabriele Marrone</a> with whom i did discuss the issue on the <a href="http://www.ruby-forum.com/topic/86624#164365">ruby forum</a>. </p>
+<p>WebDAV was such a nice idea but i guess it was the greed in the cooperate computer industry which rendered this technology practically useless. Hardly any two implementations are compatible. If you wonder why i tricked the implementation instead of implementing it, go check out the <a href="http://www.greenbytes.de/tech/webdav/rfc2518.html#locking">WebDAV RFC</a>, it is a disaster and i could not make sense of it(was not willing to waste my time on it). We are dwarfs standing on the shoulder of giants and with this gem i could make it working for me. If it works for you tell me, it not tell me also. </p>
+<p>happy new year and have a lot of fun<br /> </span></p>
