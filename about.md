@@ -5,12 +5,17 @@ permalink: /about/
 published: true
 ---
 
-
-This is me playing around with technologies. Ever since I started it. Assembled an Apple II clone and learned to program it in the 80ties, became a multimedia artist and VR pioneer in the 90ties, worked the internets but failed to become a millionaire in the noughties. Today I enjoy living in the parts from the original star trek utopian vision but still hope for others to fulfil. Flatscreens and mobiles are not the most important ones. 
+This is me playing around with technologies. Ever since it started, with
+assembly of an Apple II clone and learning to program it in the 80ties. Became
+a multimedia artist and VR pioneer in the 90ties. Worked the internets but
+failed to become a billionaire in the noughties. Today I enjoy living, at least
+partially, the original star trek utopian vision and still hope for more parts
+of it to fulfil. Flatscreens and mobiles are not the most important ones but a
+post capitalist society would be.
 
 ### More Information
 
-Programming for decades might make me a software guy. With 10+ years of C++, Java, Ruby each I consider myself quite qualified to have an opinion on language topics but with such an perspective I usually prefer to focus on the bigger picture. The system architecture is what makes or brakes a solution, not the performance of the programming language. As you might have heard the old saying: You can write bad FORTRAN in any language. Distributed systems, which where supercomputers in the 90ties, is what I like and now it is the internet with it's web scale architectures. 
+Programming for decades might make me a software guy. With 10+ years of C++, Java, Ruby each I consider myself qualified to have a strong opinion on language topics but with such an perspective I usually prefer to focus on the bigger picture. System architecture is what makes or brakes a solution, not the performance of the programming language. Like in the old saying: "You can write bad FORTRAN in any language". Distributed systems, which where supercomputers in the 90ties, is what I like and now it is the internet with it's web scale architectures where it all happens. 
 
 ### Contact me
 
