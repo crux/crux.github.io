@@ -15,7 +15,7 @@ post capitalist society would be.
 
 ### More Information
 
-Programming for decades might make me a software guy. With 10+ years of C++, Java, Ruby each I consider myself qualified to have a strong opinion on language topics but with such an perspective I usually prefer to focus on the bigger picture. System architecture is what makes or brakes a solution, not the performance of the programming language. Like in the old saying: "You can write bad FORTRAN in any language". Distributed systems, which where supercomputers in the 90ties, is what I like and now it is the internet with it's web scale architectures where it all happens. 
+Programming for decades might make me a software guy. With 10+ years of C++, Java, Ruby each I consider myself qualified to have a strong opinion on language topics but with such an perspective I usually prefer to focus on the bigger picture. System architecture is what makes or brakes a solution, not the performance of the programming language. Like in the old saying: "You can write bad FORTRAN in any language". Distributed systems where supercomputers in the 90ties. That is what I like and now it is the internet with its web scale architectures where it all happens. 
 
 ### Contact me
 
