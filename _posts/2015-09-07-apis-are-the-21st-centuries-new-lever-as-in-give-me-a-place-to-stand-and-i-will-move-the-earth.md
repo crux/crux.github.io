@@ -1,7 +1,6 @@
 ---
 layout: post
-title: 'APIs are the 21st centuries new lever, as in: "Give me a place to stand and
-  I will move the earth"'
+title: 'APIs are the 21st centuries new lever, as in: "Give me a place to stand and I will move the earth"'
 date: 2015-09-07 11:58:37.000000000 +02:00
 type: post
 published: true
@@ -30,5 +29,6 @@ author:
 ---
 <img src="{{ site.baseurl }}/assets/archsteun.jpg" alt="Archimedes" style="float:right;" align="left" border="10"/>
 
-oops, i just wanted to save title and image as draft, but as i'm still tinkering with setting up this new blogging environment it got published accidentally and somehow made it to twitter where it got favorited. Fast paced social media world. Anyhow, to not let the tweet link into the nowhere I updated this yet non-written post to be public.</p>
-<p>Once I put my insights organized I'll update this.</p>
+oops, I just wanted to save title and image as draft, but as I'm still tinkering with setting up this new blogging environment it got published accidentally and somehow made it to twitter where it got favorited. Fast paced social media world. Anyhow, to not let the tweet link into the nowhere I updated this yet non-written post to be public.
+
+Once I put my insights organized I'll update this.
