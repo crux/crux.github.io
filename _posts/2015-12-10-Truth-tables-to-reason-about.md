@@ -1,6 +1,7 @@
 ---
 layout: post
 title: You can handle the truth, in tables!
+excerpt_separator: <!--end-of-excerpt-->
 categories:
 - software
 - programming
@@ -14,6 +15,7 @@ categories:
  1 | 1 |   1</code></pre>
 
 Nice, just a couple of years down the road and bang! My old colleague picks up a lesson and posts the write up I never did. 
+<!--end-of-excerpt-->
 
 Find the _"arcane low level hack solution of an experienced old school hacker"_ to the messy world of complex nested conditions handling. Guess that's me he's talking about there.
 
