@@ -6,13 +6,15 @@ categories:
 - software
 - programming
 ---
-<pre style="padding: 0px 20px 30px 20px; float: left"><code>
- A | B | Output
+```bash
+ A | B | Output 
+   |   |  A&B
 ---|---|-------
  0 | 0 |   0
  1 | 0 |   0
  0 | 1 |   0
- 1 | 1 |   1</code></pre>
+ 1 | 1 |   1
+ ```
 
 Nice, just a couple of years down the road and bang! My old colleague picks up a lesson and posts the write up I never did. 
 <!--end-of-excerpt-->
