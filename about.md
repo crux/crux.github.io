@@ -4,14 +4,13 @@ title: About
 permalink: /about/
 published: true
 ---
-
 This is me, playing around with technologies ever since it started. From
 assembling an Apple II and learning to code it in the 80ties to becoming a
 multimedia artist and VR pioneer in the 90ties. I worked the internets but
 failed to become a billionaire in the noughties. Today I enjoy living, at least
-partially, the original star trek utopian vision and looking forware to more
-parts of it to fulfil. Flatscreens and mobiles are not the most important ones
-but a post capitalist society could be it.
+partially, the original star trek utopian vision and looking forward to even
+more parts of it to fulfill. Flat screens and mobiles are not the most
+important ones but a post capitalist society might be interesting.
 
 ### More Information
 
