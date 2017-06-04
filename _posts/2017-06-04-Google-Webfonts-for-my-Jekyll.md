@@ -3,7 +3,7 @@ layout: post
 title: Google Web Fonts for my Jekyll Sass
 excerpt_separator: <!--end-of-excerpt-->
 ---
-I recently realized I like the `Serif/SanSerif` font settings on [Medium posts] more then the default styles of my own Jekyll blog. 
+I recently realized I like the `Serif/SanSerif` font settings on [Medium posts] more then the default styles of [my own Jekyll blog].
 
 ```sass
 // google web fonts
@@ -79,3 +79,4 @@ Jekyll and Google Fonts: easy. Blogging might even get fun again and this of cou
 [Medium Posts]: https://medium.com/coconut-stories/using-ffmpeg-with-docker-94523547f35c
 [Jekyll Now]: http://github.com/barryclark/jekyll-now
 [This blog]: http://sebrink.de/
+[my own Jekyll blog]: https://github.com/crux/crux.github.com
