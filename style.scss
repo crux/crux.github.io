@@ -19,7 +19,7 @@ html {
 
 body {
   background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $Serif;
   color: $darkGray;
 }
 
@@ -31,9 +31,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
+  font-family: $SansSerif;
+  color: $gray;
+  font-weight: medium;
 
   line-height: 1.2;
   margin: 1em 0 15px;
@@ -117,6 +117,7 @@ img {
 
 .date {
   font-style: italic;
+  font-size: 0.7em;
   color: $gray;
 }
 
@@ -194,7 +195,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $SansSerif;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -213,7 +214,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $SansSerif;
   font-size: 18px;
 
   @include mobile {

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: You can handle the truth, in tables!
-excerpt_separator: <!--end-of-excerpt-->
+title: You can handle the Truth, in Tables!
 categories:
 - software
 - programming
+excerpt_separator: <!--end-of-excerpt-->
 ---
-```bash
+```Javascript
  A | B | Output 
    |   |  A&B
 ---|---|-------
