@@ -51,14 +51,15 @@ $Monospace: 'Roboto Mono', monospace;
 
 ## Style names
 
-I don't understand the original logic in the `style.css` file of [Jekyll Now]. For example, the `h1` headlines font is set to `font-family: $helveticaNeue;`. You have a sass variable for the font family, but it is named after the content of the variable. So when now changing the font-family you would either need to put another font value into the `$helveticaNeue` variable, which is confusing, or you need to change all references to `$helveticaNeue` var to references to a new font variable. Also not a smart move. This is why I named the font-family var according the  _category_ for which they are used.  
+I don't understand the original logic in the `style.css` file of [Jekyll Now]. For example, the `h1` headlines font is set to `font-family: $helveticaNeue;`. You have a sass variable for the font family, but it is named after the content of the variable. So when now changing the font-family you would either need to put another font value into the `$helveticaNeue` variable, which is confusing, or you need to change all references to `$helveticaNeue` var to references to a new font variable. Also not a smart move. 
+
+This is why I named the font-family var name to be the  _category_ for which they are used. Now I can rewrite the `style.scss` [sass] file and replace the headlines with the sans-serif and text with the serif variables. Easy to understand:
 
 ```scss
-font-family: $Serif;            // use whatever Serif font i put in variables
-f̶o̶n̶t̶-̶f̶a̶m̶i̶l̶y̶:̶ ̶$̶h̶e̶l̶v̶e̶t̶i̶c̶a̶N̶e̶u̶e̶;̶    // don't get this 
+// use whatever Serif font i put in variables
+font-family: $SanSerif; // $helveticaNeue;  
+font-family: $Serif;    // $helvetica;  
 ```
-
-Now I can rewrite the `style.css` file. The headlines should be sans-serif, the text with serif. Easy to understand. 
 
 ## Missing Monospace Code Fonts
 
