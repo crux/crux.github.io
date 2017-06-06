@@ -55,7 +55,7 @@ I don't understand the original logic in the `style.css` file of [Jekyll Now]. F
 
 ```scss
 font-family: $Serif;            // use whatever Serif font i put in variables
-font-family: $helveticaNeue;    // don't get this 
+f̶o̶n̶t̶-̶f̶a̶m̶i̶l̶y̶:̶ ̶$̶h̶e̶l̶v̶e̶t̶i̶c̶a̶N̶e̶u̶e̶;̶    // don't get this 
 ```
 
 Now I can rewrite the `style.css` file. The headlines should be sans-serif, the text with serif. Easy to understand. 
@@ -78,5 +78,6 @@ Jekyll and Google Fonts: easy. Blogging might even get fun again and this of cou
 [Google Fonts]: https://fonts.google.com/?category=Monospace&subset=latin-ext&selection.family=Roboto+Mono|Roboto+Slab:300|Roboto:500
 [Medium Posts]: https://medium.com/coconut-stories/using-ffmpeg-with-docker-94523547f35c
 [Jekyll Now]: http://github.com/barryclark/jekyll-now
+[Sass]: http://sass-lang.com/
 [This blog]: http://sebrink.de/
 [my own Jekyll blog]: https://github.com/crux/crux.github.com
