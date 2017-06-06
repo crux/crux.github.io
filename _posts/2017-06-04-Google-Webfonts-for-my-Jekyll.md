@@ -49,7 +49,7 @@ $SansSerif: 'Roboto', sans-serif;
 $Monospace: 'Roboto Mono', monospace;
 ```
 
-## Style names
+### Font Style Variable names
 
 I don't understand the original logic in the `style.css` file of [Jekyll Now]. For example, the `h1` headlines font is set to `font-family: $helveticaNeue;`. You have a sass variable for the font family, but it is named after the content of the variable. So when now changing the font-family you would either need to put another font value into the `$helveticaNeue` variable, which is confusing, or you need to change all references to `$helveticaNeue` var to references to a new font variable. Also not a smart move. 
 
