@@ -32,7 +32,7 @@ Head over to [Google Fonts] and choose the fonts you like. I went with the Robot
 
 ## CSS Variables
 
-[Sass] holds its style in the `_sass/variables.scss` file. Transforming the native CSS (which google also gives you) into a sass variable is straightforward:
+[Sass] holds its style in the `_sass/_variables.scss` file. Transforming the native CSS (which google also gives you) into a sass variable is straightforward:
 
 ```css
 font-family: 'Roboto Slab', serif;
