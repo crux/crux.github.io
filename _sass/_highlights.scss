@@ -1,15 +1,15 @@
 
-.highlight {
-  background-color: #efefef;
-  padding: 7px 7px 7px 10px;
-  border: 1px solid #ddd;
-  margin: 20px 0 20px 0;
-  overflow: auto;
-}
-
 code {
   font-family: $Monospace;
   font-size: 0.8em;
+}
+
+.highlight {
+  //background-color: #efefef;
+  //border: 1px solid #ddd;
+  padding: 7px 7px 7px 10px;
+  margin: 20px 0 20px 0;
+  overflow: auto;
 }
 
 .highlight .c { color: #586E75 } /* Comment */
