@@ -276,7 +276,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  //background-color: $lightGray;
 }
 
 footer {
@@ -284,8 +284,12 @@ footer {
   text-align: center;
 }
 
+// facebook, twitter etc...
+@import "sharingbuttons.io";
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+// ... Otherwise it really bloats up the top of the CSS file and makes it
+// difficult to find the start
 @import "highlights";
 @import "svg-icons";
 
