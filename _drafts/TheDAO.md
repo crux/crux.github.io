@@ -1,11 +1,9 @@
 ---
 layout: post
+title: 'TheDAO ist ein grossartiges Experiment!'
 comments: true
 tags:
-- draft
 ---
-## TheDAO ist ein grossartiges Experiment! 
-
 Eine Technology die so kompliziert ist, das nur eine Minderheit sie versteht. 
 Dennoch erregt sie eine breite Öffentlichkeit, wie kann das sein? Solches
 Interesse ist natürlich immer mit Geld zu erklären. Aktuell sind es ca. 150
