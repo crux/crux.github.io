@@ -16,13 +16,13 @@ Serving your blog from github pages is perfect for me, but as you you might know
 In yout markdown page source the above video looks like this:
 {% highlight html %}
 {% raw %}
-{ include youtube.html id=page.videoId %}
+{% include youtube.html id=page.videoId %}
 {% endraw %}{% endhighlight %}
 
 The `page.videoId` in here is a variable from the [front matter] of your page. Alternatively you can inline the `videoId` directly (don't forget the quotes):
 {% highlight html %}
 {% raw %}
-{ include youtube.html id="8FcfJadYysk" %}
+{% include youtube.html id="8FcfJadYysk" %}
 {% endraw %}{% endhighlight %}
 
 ## The Include Snipped
