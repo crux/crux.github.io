@@ -13,8 +13,14 @@
 <meta name="author" content="{{ site.name }}" />
 
 {% if page.title %}
-<meta property="og:title" content="{{ page.title }}" />
-<meta property="twitter:title" content="{{ page.title }}" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="twitter:title" content="{{ page.title }}" />
 {% endif %}
 
-<meta property=og:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+{% if page.image %}
+    <meta property=og:image" content="{{page.image}}" />
+    <meta name="twitter:image" content="{{page.image}}" />
+{% else %}
+    <meta property=og:image" content="{{ site.logo | prepend: site.baseurl | prepend: site.url }}" />
+    <meta name="twitter:image" content="{{ site.logo | prepend: site.baseurl | prepend: site.url }}" />
+{% endif %}
