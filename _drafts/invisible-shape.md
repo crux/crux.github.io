@@ -4,15 +4,15 @@ title: Invisible Shape Of Things Past
 image: /images/invisible-shapes/big208.jpg
 excerpt_separator: <!--end-of-excerpt-->
 ---
-And past they are, the time the things. But sometimes, they come back. Now and then, the 3D print of the old project found while cleaning up the office for the [berlin design night] visitors.
+And past they are. The time, the things, but sometimes, they come back. Now and then, the 3D print of the old project found while cleaning up the office for the [berlin design night] visitors.
 
 ![]({{site.url}}/images/invisible-shapes/big208.jpg)
 
 <!--end-of-excerpt-->
 
-This is it laying on the table after getting dust for many years. 
+This is the 3D printed model laying on the table after collecting dust for many years. 
 
-![]({{site.url}}/images/invisible-shapes/big208.jpg)
+![]({{site.url}}/images/invisible-shapes/dusted-model.jpg)
 
 [now]: .
 [then]: .
