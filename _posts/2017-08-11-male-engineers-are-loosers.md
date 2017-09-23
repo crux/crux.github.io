@@ -7,7 +7,7 @@ excerpt_separator: <!--end-of-excerpt-->
 ---
 Sure, I wanted a provocative headline, but I'm so sick and tired of all this ([uncle bob], [uber], [google gender stereotypes], etc.) [sexistische-kackscheisse] as we say in german. I just hired another female engineer. We already have two female engineers on our team, and guess what? They are great, they are helping us further to where all this male looser engineers are not able to. 
 
-__If our computer culture where dominated by women we would have had better computers!__
+__If our computer culture were dominated by women we would have had better computers!__
 
 ![]({{site.url}}/images/sexistische-kackscheisse/26-Amazon-Rex.jpg)
 <!--end-of-excerpt-->
