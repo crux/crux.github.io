@@ -2,6 +2,7 @@
 layout: post
 title: 'Beyond the Uncanny Valley!'
 author: <a href="https://github.com/crux/">Dirk Lüsebrink</a>
+image: /images/Beyond_the_Uncanny_Valley.png
 excerpt_separator: <!--end-of-excerpt-->
 ---
 In times of frustrations, of lost battles and failed hopes, this at last is a battle we won! Computer CGI ist beyond realistic, whatever we want to visualize we can.
