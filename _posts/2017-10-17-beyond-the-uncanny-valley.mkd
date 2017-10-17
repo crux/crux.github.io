@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Beyond the Uncanny Valley!'
+author: <a href="https://github.com/crux/">Dirk Lüsebrink</a>
+excerpt_separator: <!--end-of-excerpt-->
+---
+In times of frustrations, of lost battles and failed hopes, this at last is a battle we won! Computer CGI ist beyond realistic, whatever we want to visualize we can.
+
+{% include vimeo.html id="237568588" %}
+
+<!--end-of-excerpt-->
+Now let us walk out together into the wilderness to explore the avant-garde, the glitches, and the truly disturbing imaginations to drive us further into the wild new world of post-truth. This is the hope of a new world which lies ahead of us to discover.
+
