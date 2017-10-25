@@ -1,0 +1,32 @@
+---
+layout: post
+title: 'Impress yourself with the Visual Mastery of David Fincher'
+author: <a href="https://github.com/crux/">Dirk Lüsebrink</a>
+#image: /images/???
+excerpt_separator: <!--end-of-excerpt-->
+---
+Found [kottke.org] referrencing this [The Nerdwriter]'s video essay to
+the understanding of [David Fincher's work]. It shows how Fincher highjacks
+your eyes by his very complex but still very subtle camera works. 
+
+{% include youtube.html id="GfqD5WqChUY" %}
+
+<!--end-of-excerpt-->
+I am a visual person, like most people, most of the time, and it feels really
+good learning from the very best in designing visual communications. Because
+that is what it's all about, creating communications, creating emotions,
+emerging people in meaning. 
+
+Fascinated? Than continue right away, with [David Fincher - Invisible Details]. 
+
+{% include youtube.html id="QChWIFi8fOY" %}
+
+Oh boy/girl, and you thought you've seen it all. 
+
+have fun
+
+
+[kottke.org]: https://kottke.org/17/10/the-movement-of-david-finchers-camera-is-a-surrogate-for-your-eyes
+[David Fincher - Invisible Details]: https://youtu.be/QChWIFi8fOY
+[the Nerdwriter]: https://www.youtube.com/channel/UCJkMlOu7faDgqh4PfzbpLdg
+[David Fincher's work]: http://www.imdb.com/name/nm0000399/
