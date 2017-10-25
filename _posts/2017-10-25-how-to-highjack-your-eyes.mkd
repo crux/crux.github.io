@@ -2,7 +2,7 @@
 layout: post
 title: 'Impress yourself with the Visual Mastery of David Fincher'
 author: <a href="https://github.com/crux/">Dirk Lüsebrink</a>
-#image: /images/???
+image_url: http://img.youtube.com/vi/GfqD5WqChUY/0.jpg
 excerpt_separator: <!--end-of-excerpt-->
 ---
 Found [kottke.org] referrencing this [The Nerdwriter]'s video essay to
