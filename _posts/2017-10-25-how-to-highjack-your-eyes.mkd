@@ -5,7 +5,7 @@ author: <a href="https://github.com/crux/">Dirk Lüsebrink</a>
 image_url: http://img.youtube.com/vi/GfqD5WqChUY/0.jpg
 excerpt_separator: <!--end-of-excerpt-->
 ---
-Found [kottke.org] referrencing this [The Nerdwriter]'s video essay to
+Found [kottke.org] referencing this [The Nerdwriter]'s video essay to
 the understanding of [David Fincher's work]. It shows how Fincher highjacks
 your eyes by his very complex but still very subtle camera works. 
 
@@ -17,7 +17,7 @@ good learning from the very best in designing visual communications. Because
 that is what it's all about, creating communications, creating emotions,
 emerging people in meaning. 
 
-Fascinated? Than continue right away, with [David Fincher - Invisible Details]. 
+Fascinated? Then continue right away, with [David Fincher - Invisible Details]. 
 
 {% include youtube.html id="QChWIFi8fOY" %}
 
