@@ -8,13 +8,27 @@ excerpt_separator: <!--end-of-excerpt-->
 Head over to [@txtgif] to get your animated gif reply! It is quiet simple and
 goes like this: you tweet to the bot and the bot will render your tweet as an
 animated gif and make it a re-tweet or yours! From there on, you're on your
-own. Follow, re-tweet and give likes to spread the word!
+own. [Follow, re-tweet and give likes to spread the word!][@txtgif]
 
 ![]({{site.url}}/images/new-twitter-gif-bot-in-town/there-is-a-new-bot-in-town.gif)
 
 
 <!--end-of-excerpt-->
 I'm running this on a [free-tier google cloud micro instance] in a docker container. The app is written in go and the deployment is docker based. In case of interest, [drop me a note], i might write up something later about the go/google cloud/docker thing than, 
+
+_UPDATE_
+
+Still no idea how this works? Ok, the idea is that the bot will listen to tweets YOU are sending to HIM. That means, the first thing you have to do is to go to the [@txtgif] page an hit the "Tweet to txtgif" button:
+
+![]({{site.url}}/images/new-twitter-gif-bot-in-town/tweet-to-button.jpg)
+
+Then, a little box will popup where you can write your message:
+
+![]({{site.url}}/images/new-twitter-gif-bot-in-town/tweet-box.png)
+
+This message is received by the bot. It will strip the leading @txtgif and create an animated gif from the rest. Please note, just plain text, for now, no fancy emojis or whatsoever. Won’t work, might come later. The animated gif is than posted as an RT (retweet) of your tweet, it is your message anyhow. This means you will see it in your timeline. From thereon, you’re free to go, do whatever you like with the gif or the tweet.
+
+I plan on adding features and make the process easier, but that depends on what you like and want. So, [go tell me][drop me a note].
 
 have fun
 
