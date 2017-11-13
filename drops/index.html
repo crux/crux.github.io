@@ -1,0 +1,201 @@
+<html>
+
+  <head>
+    <title>sebrink :: drops</title>
+
+    <style type="text/css">
+      body        { 
+        background: #aaa;
+        margin: 10px;
+      }
+
+      .button {
+        background: green;
+        color: white;
+        border: 1px solid black;
+        padding: 0.5em;
+        margin: 0.5em;
+      }
+
+      #content_pane {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 84%;
+        height: 84%;
+        margin: 8%;
+        background: #aaa;
+      }
+
+      #control_pane {
+        display: none;
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        top: 5%;
+        padding: 5px;
+        background: gray;
+        border: 1px solid green;
+      }
+
+      #debug_pane {
+        display: none;
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        bottom: 5%;
+        height: 5em;
+        background: gray;
+        border: 1px solid red;
+      }
+
+      .drop {
+        border: 1px solid black;
+      }
+
+      #b1 {
+        background: #0ff;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+    </style>
+
+    <script type="text/javascript" src="dhtml.js"></script>
+    <script language="JavaScript">
+
+      var DROP_COUNT = 20;
+      var drop = new Array();
+      var frame = 0;
+
+      function Drop(no) {
+
+        // member variables 
+        this.ref = null;
+        this.id = 'drop_' + no;
+
+
+        this.reset = function() {
+          this.cx = random(0, 100);
+          this.cy = random(0, 100);
+          this.radius = random(1, 10);
+          this.cyclelength = random( 20, 100);
+          this.step = random( 0, this.cyclelength);
+        }
+        this.reset();
+
+
+        this.draw = function() {
+          return '<div class="drop" id="' + this.id + '"></div>';
+        }
+
+        this.update = function() {
+
+          if( this.cyclelength < this.step) {
+            this.reset();
+          }
+          this.step++;
+
+          if( ! this.ref) {
+            this.ref = new ObjectByName( this.id);
+            appendIt('debug_pane', this.ref);
+
+            var style = this.ref.style;
+            style.position = 'absolute';
+            style.background = random_color();
+          }
+
+          var style = this.ref.style;
+
+          var a = 1 + Math.sin((this.step / this.cyclelength) * 2 * Math.PI);
+          var w = a * this.radius;
+          var h = a * this.radius;
+          style.width = w + '%';
+          style.height = h + '%';
+
+          /*
+          this.cx += random(0, 5) - 2;
+          this.cy += random(0, 5) - 2;
+          */
+          style.left = this.cx - (w/2) + '%';
+          style.top = this.cy - (h/2) + '%';
+          /* */
+        }
+      }
+
+      function update() {
+          for( i = 0; i < drop.length; i++) {
+            drop[i].update();
+          }
+      }
+
+      function draw() {
+
+          ++frame;
+          writit( 'debug_pane', '#' + frame + ' World::draw');
+
+          var tmp = "";
+          for( i = 0; i < drop.length; i++) {
+            //appendIt( 'debug_pane', i);
+            var o = drop[i];
+            tmp += o.draw();
+          }
+          writit( 'content_pane', tmp);
+          //writit( 'debug_pane', tmp);
+      }
+
+      var updateInterval = null;
+
+      function onoff() {
+        if( updateInterval) {
+          clearInterval(updateInterval);
+          updateInterval = null;
+        } else {
+          updateInterval = setInterval( update, 20);
+        }
+      }
+
+      function init_page() {
+        // a["eins"] ();
+        // alert( a["zwei"]);
+        // setInterval( a["drei"], 2000);
+        // setInterval( draw, 2000);
+
+        //world = new World();
+
+        for( i = 0; i < DROP_COUNT; ++i) {
+          drop[i] = new Drop(i);
+        }
+        writit( 'debug_pane', 'drop.length:' + drop.length);
+
+        draw();
+        onoff();
+      }
+
+    </script>
+  </head>
+
+  <body id="body" onload="init_page();">
+
+    <div id="content_pane">
+      <!--div id="b1"></div-->
+    </div>
+
+    <div id="control_pane">
+      <span class="button" onclick="onoff();">on/off</span> 
+      <span class="button" onclick="update();">update</span> 
+      <span class="button" onclick="draw();">draw</span> 
+    </div>
+
+    <div id="debug_pane">
+      line<br>
+      line<br>
+      line<br>
+      line<br>
+      line<br>
+    </div>
+  </body>
+</html>
