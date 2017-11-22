@@ -1,56 +1,38 @@
 ---
 layout: project
-title: 'Colored Drops in Javascript Land!'
+title: 'Color Drops in Javascript Land!'
 author: <a href="https://github.com/crux/">dirk lüsebrink</a>
 image: /images/drops-in-javascript-land/shot.png
 excerpt_separator: <!--end-of-excerpt-->
 ---
-Add Some color to your life. My first foray into dynamic javascript territory in 2001.
+Add Some color to your life: My first foray into dynamic javascript territory **from around 2001!**
 
-x
-<div id=".if" style="height: 300px; bgcolor: green"> 
-<iframe style="display: block; margin: auto; width: 70%" src="/drops/" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<script>
-window.onresize = function(e) { 
-var i = document.querySelector("iframe"); 
-i.style.hight = i.offsetWidth;
-console.log(i.style.heigth)
-}
-//fitvids({ players: 'iframe[src*="/drops/"]' })
-</script>
+{% include iframe.html src="/drops/" %}
 
 <!--end-of-excerpt-->
-This is REALY old! I can exactly say at the as the machines and the site don't exist any more but I think I did this in the naughties, that would date it to something like 2001 or 2002. This was basically my first foray into javascript
+So this is really **OLD!** I put a first [blog post online in 2006], and but
+that time it was already a couple of years old and untouched. Coming from
+computer graphics land I was intersted in playing with dynamic javascript for
+full-screen, better say full window, display. Above is an embedded iframe, see
+it [here full page].
 
+I can exactly say as the machines and the site don't exist any more but I would
+date this little javascript experiment of mine to 2001. Around that time I
+realized Javascript was one of the most misunderstood languages and actually
+fell in love with it. Which is for why i tried really really hard writing clean
+code, something you basically unheard of by that time of `marquee` tags and
+javascript clocks. Flash ruled, and I hated Flash.
+
+
+[here full page]: /drops
+[blog post online in 2006]: /dropjes
+
+Actually, I'm quite proude of my javascript. It's not complicated, but it is
+clean and the amazing part is, it is running basically untouched, 15 years
+later in my browser. See some of the dynamic javascript abstraction code i
+wrote for myself below:
 
 ```js
-function random( low, high) {
-    var now = new Date();
-    var seed = now.getSeconds();
-    return low + Math.floor( (high - low) * Math.random(seed));
-}
-
-function dec2hex( digit ) {
-    if( 0 <= digit && digit < 16) {
-        return "0123456789abcdef".charAt(digit);
-    } else {
-        return '?';
-    }
-}
-
-function random_color() {
-    return "#" 
-        + dec2hex( random( 0, 16))
-        + dec2hex( random( 0, 16))
-        + dec2hex( random( 0, 16))
-        + dec2hex( random( 0, 16))
-        + dec2hex( random( 0, 16))
-        + dec2hex( random( 0, 16))
-        ;
-}
-
 function ObjectByName(name) {
     if (document.getElementById) {
         this.obj = document.getElementById(name);
@@ -86,18 +68,6 @@ function appendIt( id, text) {
         x.innerHTML += text;
     }
 }
-
-function dehex(s) { 
-
-    if( (s == null) || (s.length < 1)) {
-        return null;
-    }
-
-    var re = /%([a-f0-9]{2})/gi; 
-    return s.replace( re, function(str,p1,offset,s) { 
-            return String.fromCharCode(eval("0x"+p1)) 
-            }); 
-} 
 
 function urldecode() {
 
