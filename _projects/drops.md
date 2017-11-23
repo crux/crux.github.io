@@ -30,8 +30,7 @@ clocks. Flash ruled, and I hated Flash.
 Actually, I'm quite proude of my javascript. It's not complicated, but it is
 clean and the amazing part is, it is running untouched, 15 years
 later in my browser. [Full source code] is now merged into this jekyll blog and
-[can be found on github]. For a glimpse see some of my dynamic javascript
-abstraction code below for example:
+[can be found on github]. Catch a glimpse below, isn't it beautiful?
 
 ```js
 function ObjectByName(name) {
@@ -110,6 +109,8 @@ function urlparam( key, default_value) {
     return value;
 }
 ```
+
+have fun
 
 [Full source code]: https://github.com/crux/crux.github.io/tree/master/drops
 [can be found on github]: https://github.com/crux/crux.github.io/tree/master/drops
