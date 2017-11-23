@@ -12,16 +12,16 @@ Add Some color to your life: My first foray into dynamic javascript territory **
 <!--end-of-excerpt-->
 I put a first [post online in 2006], by that time it was already untouched and
 a couple of years old. I guess that counts as **really OLD!** Coming from
-computer graphics land I was frustrated with C++, X11 and OpenGL and intersted
+computer graphics land I was frustrated with C++, X11 and OpenGL and interested
 in playing with dynamic javascript for full-screen, better say full window,
 display. The stuff above is an embedded `IFrame`, you can link to the
 _original_ [full page here].
 
-I can't exactly say as the machines and the site no longer exist but I would
+I can't exactly say, as the machines and the site no longer exist, but I would
 date my little javascript experiment to 2001. Around that time I realized
 Javascript was one of the most misunderstood languages and fell in love with
 it. Which is for why I tried really really hard writing clean code, something
-basically unheard in javascript land, a time of `marquee` tags and javascript
+basically unheard in javascript land, a time of `<marquee>` tags and javascript
 clocks. Flash ruled, and I hated Flash.
 
 [full page here]: /drops
