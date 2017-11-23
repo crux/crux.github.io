@@ -1,0 +1,25 @@
+.aspectratio {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-top: calc(100% / (var(--aspect-ratio)));
+  
+  /* visual helper */
+  /*
+  outline: 2px solid blue;
+  background: hotpink;
+  */
+}
+
+.aspectratio > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* center my children */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
