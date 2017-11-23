@@ -10,27 +10,28 @@ Add Some color to your life: My first foray into dynamic javascript territory **
 {% include iframe.html src="/drops/" %}
 
 <!--end-of-excerpt-->
-So this is really **OLD!** I put a first [blog post online in 2006], and but
-that time it was already a couple of years old and untouched. Coming from
-computer graphics land I was intersted in playing with dynamic javascript for
-full-screen, better say full window, display. Above is an embedded iframe, see
-it [here full page].
+I put a first [post online in 2006], by that time it was already untouched and
+a couple of years old. I guess that counts as **really OLD!** Coming from
+computer graphics land I was frustrated with C++, X11 and OpenGL and intersted
+in playing with dynamic javascript for full-screen, better say full window,
+display. The stuff above is an embedded `IFrame`, you can link to the
+_original_ [full page here].
 
-I can exactly say as the machines and the site don't exist any more but I would
-date this little javascript experiment of mine to 2001. Around that time I
-realized Javascript was one of the most misunderstood languages and actually
-fell in love with it. Which is for why i tried really really hard writing clean
-code, something you basically unheard of by that time of `marquee` tags and
-javascript clocks. Flash ruled, and I hated Flash.
+I can't exactly say as the machines and the site no longer exist but I would
+date my little javascript experiment to 2001. Around that time I realized
+Javascript was one of the most misunderstood languages and fell in love with
+it. Which is for why I tried really really hard writing clean code, something
+basically unheard in javascript land, a time of `marquee` tags and javascript
+clocks. Flash ruled, and I hated Flash.
 
-
-[here full page]: /drops
-[blog post online in 2006]: /dropjes
+[full page here]: /drops
+[post online in 2006]: /dropjes
 
 Actually, I'm quite proude of my javascript. It's not complicated, but it is
-clean and the amazing part is, it is running basically untouched, 15 years
-later in my browser. See some of the dynamic javascript abstraction code i
-wrote for myself below:
+clean and the amazing part is, it is running untouched, 15 years
+later in my browser. [Full source code] is now merged into this jekyll blog and
+[can be found on github]. For a glimpse see some of my dynamic javascript
+abstraction code below for example:
 
 ```js
 function ObjectByName(name) {
@@ -109,3 +110,6 @@ function urlparam( key, default_value) {
     return value;
 }
 ```
+
+[Full source code]: https://github.com/crux/crux.github.io/tree/master/drops
+[can be found on github]: https://github.com/crux/crux.github.io/tree/master/drops
