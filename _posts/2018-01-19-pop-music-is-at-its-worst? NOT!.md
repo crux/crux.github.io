@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Pop Music is at its Worst? NOT!
-image: /images/pop-music/--TAYLER--
+image: /images/pop-music-is-at-its-worst/maxresdefault.jpg
 excerpt_separator: <!--end-of-excerpt-->
+categories: [music, pop, culture]
 ---
 Now this is interesting (for me). There is supposedly scientific evidence that
 modern pop music IS actually worse than ever before in history.
