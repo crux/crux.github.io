@@ -3,6 +3,7 @@ layout: post
 title: Invisible Shape Of Things Past
 image: /images/invisible-shapes/big208.jpg
 excerpt_separator: <!--end-of-excerpt-->
+categories: [art, project]
 ---
 And past they are. The time, the things, but sometimes, they come back. Now and then, the 3D print of the old project found while cleaning up the office for the [berlin design night] visitors.
 
