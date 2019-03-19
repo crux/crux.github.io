@@ -1,0 +1,28 @@
+---
+layout: post
+title: Measuring and Metrics make You worse!
+image: /images/metric-make-you-worse/skw_moderntimes_00_imgr-m.jpg
+excerpt_separator: <!--end-of-excerpt-->
+categories: [business, society, start-ups, organisationalscience]
+---
+In 2006 I expressed my deepest discomfort ([Barking up the
+wrong tree]) with the new and upcoming mania of quantification and self
+optimizing everything. Today I found this [aeon article making a very strong
+case against this metrics & measuring] dogma and I liked it.
+
+![]({{site.url}}/images/metric-make-you-worse/skw_moderntimes_00_imgr-m.jpg)
+
+<!--end-of-excerpt-->
+
+Back then it came to me as [GTD] (Getting things done). Being a programmer
+myself, meaning a naturally structured and super lazy person at the same time,
+I was immediately sold in the beginning. How could I not? The promise of more
+efficiency, getting more done, with less effort, what not to like about it. But
+soon it felt wrong. As a lazy person (see above) I also don't like priming
+myself on methods which are not sustainable. And constantly measuring and
+quantifying my life did not feel like something I wanted to live by for any
+longer than absolutely neccessary.
+
+[aeon article making a very strong case against this metrics & measuring]: https://aeon.co/ideas/against-metrics-how-measuring-performance-by-numbers-backfires
+[GTD]: https://gettingthingsdone.com/
+[Barking up the wrong tree]: /gtd-is-the-right-thing-in-the-wrong-direction/
