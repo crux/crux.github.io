@@ -1,0 +1,14 @@
+---
+layout: post
+title: Schöner T-Shirt!
+image: /images/alte-weisse-maenner.png
+categories: [t-shirt, fun]
+excerpt_separator: <!--end-of-excerpt-->
+---
+Ich mach jetzt auch in Herrenbekleidung. Kommt und kauft! [Ernsthaft Leute,
+kommt und kauft!][shirtee].
+
+![]({{site.url}}/images/schoener-t-shirt/alte-weisse-maenner.png)
+
+<!--end-of-excerpt-->
+[shirtee]: https://www.shirtee.com/en/5c8e841d65ab0/
