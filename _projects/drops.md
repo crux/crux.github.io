@@ -4,6 +4,7 @@ title: 'Color Drops in Javascript Land!'
 author: <a href="https://github.com/crux/">dirk lüsebrink</a>
 image: /images/drops-in-javascript-land/shot.png
 excerpt_separator: <!--end-of-excerpt-->
+categories: [programming, javascript, project]
 ---
 Add Some color to your life: My first foray into dynamic javascript territory **from around 2001!**
 

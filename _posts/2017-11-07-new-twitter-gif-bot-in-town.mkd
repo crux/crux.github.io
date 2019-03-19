@@ -4,6 +4,7 @@ title: 'There is a new Gif Bot in Town!'
 author: <a href="https://github.com/crux/">Dirk Lüsebrink</a>
 image: /images/new-twitter-gif-bot-in-town/there-is-a-new-bot-in-town.gif
 excerpt_separator: <!--end-of-excerpt-->
+categories: [programming, twitter, bot]
 ---
 Head over to [@txtgif] to get your animated gif reply! It is quiet simple and
 goes like this: you tweet to the bot and the bot will render your tweet as an
