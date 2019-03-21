@@ -15,11 +15,18 @@ avatar: https://avatars0.githubusercontent.com/u/5321?v=3&s=140
 facebook:
     app_id: 224408678096751
 
-# adding jobs as a new post/page type
+# adding projects as a new post/page type
 collections:
   projects:
     output: true
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
 #
 # Flags below are optional
 #

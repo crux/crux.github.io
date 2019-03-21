@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: default
 title: 'Color Drops in Javascript Land!'
 author: <a href="https://github.com/crux/">dirk lüsebrink</a>
 image: /images/drops-in-javascript-land/shot.png
