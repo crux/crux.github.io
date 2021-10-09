@@ -23,5 +23,5 @@ Last century, it was the distributed supercomputers I liked, now it is the
 internet with its web-scale architectures and the multi-billion size
 communities where it all happens, which we all love and loathe. 
 
-_contact me at [dirk@sebrink.de](mailto:dirk@sebrink.de)_
+_contact me here [dirk@sebrink.de](mailto:dirk@sebrink.de), or there [LinkedIn](https://bit.ly/dirk-does-business)_
 
