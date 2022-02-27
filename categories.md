@@ -1,15 +1,26 @@
 ---
 layout: page
 permalink: /categories/
-title: Categories
+title: Tags & Categories
 ---
-__Note:__ this whole category thing on this blog is not really working. I try
-to put it in shape, but hey, this whole stuff dates back over ten years, and
-besides the fact that I actually still need to find out _WHAT_ I want, I also
-need to figure out _HOW_ to do it. And how to migrate age-old wordpress
-metadata and stuff.
+_(please note: my tagging sucks. I know, I am working on it. This whole jekyll
+category thing is something still need to get righ, bear with me. Most content
+here is ages old, from pre-migration HTML files, which are not holding any
+correct category and meta information.)_
 
-<div id="archives">
+<section>
+categories: 
+{% for category in site.categories %}
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <span id="#{{ category_name | slugize }}">
+      <a 
+        href="{{ site.baseurl }}/categories/#{{ category_name | slugize }}"
+      >#{{ category_name }}</a>
+    </span>
+{% endfor %}
+</section>
+
+<section id="archives">
 {% for category in site.categories %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
@@ -21,11 +32,11 @@ metadata and stuff.
 
     <ul>
     {% for post in site.categories[category_name] %}
-      <article class="archive-item">
+      <!--article class="archive-item"-->
       <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
-      </article>
+      <!--/article-->
     {% endfor %}
     </ul>
   </div>
 {% endfor %}
-</div>
+</section>
