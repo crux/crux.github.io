@@ -2,6 +2,9 @@
 layout: post
 title: There is no Undo in Unix rm Command
 excerpt_separator: <!--end-of-excerpt-->
+categories:
+ - unix
+ - command-line
 ---
 
 And that's the way I like it!
