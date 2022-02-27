@@ -6,7 +6,6 @@ categories:
  - unix
  - command-line
 ---
-
 And that's the way I like it!
 
 ```sh
