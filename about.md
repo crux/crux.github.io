@@ -23,9 +23,9 @@ Last century, it was the distributed supercomputers I liked, now it is the
 internet with its web-scale architectures and the multi-billion size
 communities where it all happens, which we all love and loathe. 
 
-_contact me here [dirk@sebrink.de](mailto:dirk@sebrink.de), or there [LinkedIn](https://bit.ly/dirk-does-business)_
+_contact me here [dirk@sebrink.de](mailto:dirk@sebrink.de), or there [LinkedIn](https://www.linkedin.com/in/dluesebrink/)_
 
 _(updated, due to recent events:)_
  - co-founder of ART+COM, <https://www.netflix.com/title/81074012>
  - <https://www.linkedin.com/feed/update/urn:li:activity:6852515746107416576/>
- - co-author, creator of ZERSEHER: <https://www.faz.net/aktuell/feuilleton/kunst-und-architektur/joachim-sauter-vorbild-fuer-netflix-the-billion-dollar-code-17597517.html>
+ - creator, co-author of ZERSEHER: <https://www.faz.net/aktuell/feuilleton/kunst-und-architektur/joachim-sauter-vorbild-fuer-netflix-the-billion-dollar-code-17597517.html>
