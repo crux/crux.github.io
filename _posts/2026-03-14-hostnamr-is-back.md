@@ -31,4 +31,6 @@ If you want to see what a "web 2.0" single page application looked like in 2006,
 you go](https://sebrink.de/hostnamr). And if you want to read the original launch post
 from back then, [that's still here too](/please-give-a-warm-welcome-to-hostnamr/).
 
+Oh, and one more thing though: I took out google analytics...
+
 have fun
